@@ -18,7 +18,7 @@ and introduces the foundations of the Awk programming language.
 
 <br/><br/>
 
-[Get started!](overview/){ .md-button .md-button--primary }
+[Get started!](morning_session/overview/){ .md-button .md-button--primary }
 
 <br/><br/>
 
