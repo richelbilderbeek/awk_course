@@ -1,5 +1,10 @@
 # Awk course FAQ
 
+## What is the goal of this repository?
+
+The goal of this repository is to use the 'To Awk Or Not?' materials
+and put it into lesson plans. 
+
 ## Why is the course on 'To Awk Or Not?'
 
 This repository is based on the material of <https://pmitev.github.io/to-awk-or-not/>,
