@@ -1,12 +1,12 @@
 # Lesson plan
 
-- Awk
+- AWK
 - Teacher: Richel
 - Day: Monday 2024-01-22
 
 Teaching goals:
 
-- Learners feel that Awk is something they can do
+- Learners feel that AWK is something they can do
 - Learners work in small groups
 - Learners have enough breaks
 - Practice to use the fundamental teaching cycle (as discussed in Mike Bell's 'The 
@@ -15,13 +15,13 @@ Teaching goals:
 
 Non-goals:
 
-- Discuss as many Awk concepts as possible,
+- Discuss as many AWK concepts as possible,
   instead follow the group's pace
-- Stick to the schedule about Awk theory,
+- Stick to the schedule about AWK theory,
   instead follow the group's pace
-- Practice Awk theory enough to master it,
+- Practice AWK theory enough to master it,
   instead follow the group's pace
-- Tailor to advanced Awk developers,
+- Tailor to advanced AWK developers,
   instead follow the beginners' pace 
   and let the more advanced learners help
 - Teach best practices,
@@ -57,36 +57,4 @@ Negative feedback that I will respond to:
 
 In teaching cycles:
 
-- What is Awk?
-
-
-```mermaid
-flowchart TD
-
-  can_use_script[Can use a script?]
-  can_use_sed[Can use sed?]
-  can_use_grep[Can use grep?]
-
-  awk[Use Awk]
-  c[Use C]
-  sed[Use sed]
-  grep[Use grep]
-
-  compiled_language[Compiled language]
-  scripting_language[Scripting language]
-
-  stream_editor[Stream editor]
-  work_with_regular_expressions[Work with regular expressions]
-
-  awk --> |is a| scripting_language
-  c --> |is a| compiled_language
-  sed --> |is a| stream_editor
-  grep --> |allows to| work_with_regular_expressions
-
-  can_use_script --> |no| c
-  can_use_script --> |yes| can_use_sed
-  can_use_sed --> |no| awk
-  can_use_sed --> |yes| can_use_grep
-  can_use_grep --> |no| sed
-  can_use_grep --> |yes| grep
-```
+- What is AWK?

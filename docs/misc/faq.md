@@ -1,4 +1,4 @@
-# Awk course FAQ
+# AWK course FAQ
 
 ## What is the goal of this repository?
 

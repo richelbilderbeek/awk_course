@@ -11,10 +11,10 @@ template: home.html
 <br/><br/>
 
 
-# Welcome to the UPPMAX Awk course
+# Welcome to the UPPMAX AWK course
 
 This [course](https://github.com/UPPMAX/awk_course) 
-and introduces the foundations of the Awk programming language.
+and introduces the foundations of the AWK programming language.
 
 <br/><br/>
 

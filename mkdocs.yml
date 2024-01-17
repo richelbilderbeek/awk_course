@@ -1,10 +1,10 @@
-site_name: Awk course
+site_name: AWK course
 
 nav:
   - Start: index.md
   - Morning Session:
     - Overview: morning_session/overview.md
-    - What is Awk: morning_session/what_is_awk.md
+    - What is AWK: morning_session/what_is_awk.md
   - Afternoon Session:
     - Overview: afternoon_session/overview.md
   - Miscelleneous:
@@ -12,7 +12,7 @@ nav:
 
 theme:
   name: material
-  greetings: Welcome to the UPPMAX Awk course
+  greetings: Welcome to the UPPMAX AWK course
   font:
     # text: Lato
     code: JetBrains Mono

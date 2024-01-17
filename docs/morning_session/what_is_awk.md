@@ -95,7 +95,7 @@ flowchart TD
   can_use_sed[Can use sed?]
   can_use_grep[Can use grep?]
 
-  awk[Use Awk]
+  awk[Use AWK]
   c[Use C]
   sed[Use sed]
   grep[Use grep]
