@@ -16,3 +16,8 @@ resource that has both text and exercises.
 That repository does not allow `mermaid` plots.
 I will not change the setup of the 'To Awk Or Not?' repository.
 Hence, I needed another repository :-) 
+
+## Why is this a Fork from the UPPMAX repository?
+
+Because the current owner does not have all 
+the access rights to work on that repository.
