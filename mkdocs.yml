@@ -1,9 +1,13 @@
 site_name: Awk course
 
 nav:
-  - Start: ./overview.md
-  - Misc:
-    - FAQ: ./faq.md
+  - Start: index.md
+  - Morning Session:
+    - Overview: morning_session/overview.md
+  - Afternoon Session:
+    - Overview: afternoon_session/overview.md
+  - Miscelleneous:
+    - FAQ: misc/faq.md
 
 theme:
   name: material
