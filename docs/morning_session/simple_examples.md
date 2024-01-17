@@ -92,6 +92,31 @@ of the page '1. Simple examples', until the first question.
 Make sure to run the first example: `awk '/gold/' coins.txt`, 
 to ensure you can actually use `awk`.
 
+???- question "I get an error, how do I fix it?"
+
+    This error proves that `awk` is not installed:
+
+    ```
+    $ awk '/gold/' coins.txt
+    awk: command not found
+    ```
+
+    Solution: install `awk`.
+
+    This error shows that the file `coins.txt` is not found:
+
+    ```
+    $ awk '/gold/' coins.txt
+    awk: fatal: cannot open file `coins.txt' for reading: No such file or directory
+    ```
+
+    Solution: download the file from <https://pmitev.github.io/to-awk-or-not/data/coins.txt>,
+    for example, by doing:
+
+    ```
+    wget https://pmitev.github.io/to-awk-or-not/data/coins.txt
+    ```
+
 > Try to run the above example for "silver". What is different? How can one fix it?
 
 Answer the question.
