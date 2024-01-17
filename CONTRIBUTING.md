@@ -4,5 +4,5 @@ Awesome! Thanks for reading this!
 
 In general, I will accept all Pull Requests, if:
 
- * The content matches to goal of this repository
+ * The content helps achieve [the goal of this repository](faq.md)
  * All CI tests keep passing
