@@ -8,7 +8,9 @@
 
     Teaching goals are:
 
-    - .
+    - The learners get an idea when to use AWK
+    - The learners connect AWK with something they know
+    - The learners know the difference between the words AWK, Awk and `awk`
 
     Other goals are:
 
@@ -60,7 +62,7 @@ flowchart TD
   can_use_grep --> |yes| grep
 ```
 
-```
+```mermaid
 flowchart TD
 
     %% Give a white background to all nodes, instead of a transparent one
