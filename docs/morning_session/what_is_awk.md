@@ -30,6 +30,16 @@
 
 In this session, we learn about AWK.
 
+```mermaid
+flowchart TD
+
+    input --> AWK --> output
+
+    input_1[Female Anna\nMale Bert\nFemale Carla] --> AWK_1['/Male/'] --> output_1[Male Bert]
+```
+
+> A view of what AWK does
+
 ## Exercises
 
 ### Exercise procedure
