@@ -7,6 +7,10 @@ and puts it into teaching cycles.
 
  * [FAQ](faq.md)
 
+## Schedule
+
+ * [What is Awk](what_is_awk.md)
+
 ## Overview
 
 ```mermaid
