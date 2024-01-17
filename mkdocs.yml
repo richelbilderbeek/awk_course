@@ -1,7 +1,7 @@
 site_name: Awk course
 
 nav:
-  - Start: index.md
+  - Start: overview.md
   - Misc:
     - FAQ: faq.md
 
