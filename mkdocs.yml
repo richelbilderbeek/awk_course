@@ -2,6 +2,8 @@ site_name: Awk course
 
 nav:
   - Start: index.md
+  - Misc:
+    - FAQ: faq.md
 
 theme:
   name: material
