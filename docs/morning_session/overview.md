@@ -13,7 +13,7 @@ This module introduces the fundamentals of the AWK language.
 
 Time          | Topic
 --------------|-------------------------------
-09:00-10:00   | [What is AWK](what_is_awk.md), [simple examples](simple_examples.md)
+09:00-10:00   | [What is AWK](what_is_awk.md), [When to use AWK](when_to_use_awk.md) [simple examples](simple_examples.md)
 10:00-10:15   | Break
 10:15-11:00   | .
 11:00-11:15   | Break
