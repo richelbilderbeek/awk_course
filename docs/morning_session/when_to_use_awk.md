@@ -2,31 +2,24 @@
 
 !!!- info "Learning objectives"
 
-    - .
+    - Hear about the tools similar to `awk`
 
 ???- question "For teachers"
 
     Teaching goals are:
 
-    - The learners get an idea what AWK is
-      - The learners connect AWK with something they know
-      - The learners know the difference between the words AWK, Awk and `awk`
-    - The learners get an idea when to use AWK
-
-    Other goals are:
-
-    - .
+    - Show the tools similar to `awk`
 
     Lesson plan:
 
     * 5 mins: prior knowledge
     * 5 mins: presentation
-    * 15 mins: challenge
+    * ? mins: challenge
     * 5 mins: feedback
 
 ## Overview
 
-In this session, we learn about AWK.
+In this session, we learn about the tools similar to `awk`.
 
 ## Exercises
 
@@ -86,14 +79,21 @@ In this session, we learn about AWK.
 
 !!!- info "Learning objectives"
 
-    - to understand when to use AWK
-    - to practice with the differences between `awk`, `sed` and `grep`
+    - Hear about the tools similar to `awk`
+
+Here is an overview of tools similar to `awk`:
+
+Tool                                      |Description (as copied from their Wikipedia page)
+------------------------------------------|---------------------------------------------------------------------
+[AWK](https://en.wikipedia.org/wiki/AWK)  |a domain-specific language designed for text processing and typically used as a data extraction and reporting tool
+[sed](https://en.wikipedia.org/wiki/Sed)  |a Unix utility that parses and transforms text, using a simple, compact programming language
+[grep](https://en.wikipedia.org/wiki/Grep)|a command-line utility for searching plain-text data sets for lines that match a regular expression
 
 Read ['To Awk Or Not'](https://pmitev.github.io/to-awk-or-not/):
 
-- Main page
+- Main page, quote at the top
 
-This graph puts the same info into another perspective:
+This graph puts the same quote into another perspective:
 
 ```mermaid
 flowchart TD
@@ -125,3 +125,4 @@ flowchart TD
   can_use_grep --> |no| sed
   can_use_grep --> |yes| grep
 ```
+

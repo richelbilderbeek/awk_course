@@ -11,13 +11,8 @@
     Teaching goals are:
 
     - The learners get an idea what AWK is
-      - The learners connect AWK with something they know
-      - The learners know the difference between the words AWK, Awk and `awk`
-    - The learners get an idea when to use AWK
-
-    Other goals are:
-
-    - .
+    - The learners connect AWK with something they know
+    - The learners know the difference between the words AWK, Awk and `awk`
 
     Lesson plan:
 
@@ -38,7 +33,7 @@ flowchart TD
     input_1[Female Anna\nMale Bert\nFemale Carla] --> AWK_1['/Male/'] --> output_1[Male Bert]
 ```
 
-> A view of what AWK does
+> AWK can be applied as a filter.
 
 ## Exercises
 
@@ -228,46 +223,4 @@ Which of these statements is true?
         AWK ~~~ C
         AWK ~~~ programming_languages
         AWK ~~~ R    
-    ```
-
-### Exercise 2: when to use AWK?
-
-Read:
-
-- ['To Awk Or Not' main page](https://pmitev.github.io/to-awk-or-not/)
-
-
-???- info "Solutions"
-
-    This graph puts the same info into perspective:
-
-    ```mermaid
-    flowchart TD
-
-      can_use_script[Can use a script?]
-      can_use_sed[Can use sed?]
-      can_use_grep[Can use grep?]
-
-      awk[Use AWK]
-      c[Use C]
-      sed[Use sed]
-      grep[Use grep]
-
-      compiled_language[Compiled language]
-      scripting_language[Scripting language]
-
-      stream_editor[Stream editor]
-      work_with_regular_expressions[Work with regular expressions]
-
-      awk --> |is a| scripting_language
-      c --> |is a| compiled_language
-      sed --> |is a| stream_editor
-      grep --> |allows to| work_with_regular_expressions
-
-      can_use_script --> |no| c
-      can_use_script --> |yes| can_use_sed
-      can_use_sed --> |no| awk
-      can_use_sed --> |yes| can_use_grep
-      can_use_grep --> |no| sed
-      can_use_grep --> |yes| grep
     ```
