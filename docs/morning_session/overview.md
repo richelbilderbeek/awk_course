@@ -1,10 +1,10 @@
-# awk_course
+# AWK course
 
-This module introduces the fundamentals of Python programming language. 
+This module introduces the fundamentals of the AWK language. 
 
 !!! info "Content"
 
-    This is the teaching material for the UPPMAX Awk course.
+    This is the teaching material for the UPPMAX AWK course.
 
     This repository is based on the material of <https://pmitev.github.io/to-awk-or-not/>
     and puts it into teaching cycles.
@@ -13,7 +13,7 @@ This module introduces the fundamentals of Python programming language.
 
 Time          | Topic
 --------------|-------------------------------
-09:00-10:00   | [What is Awk](what_is_awk.md)
+09:00-10:00   | [What is AWK](what_is_awk.md)
 10:00-10:15   | Break
 10:15-11:00   | .
 11:00-11:15   | Break
@@ -23,7 +23,7 @@ Time          | Topic
 
 ```mermaid
 flowchart TD
-    awk[Awk]
+    awk[AWK]
     it_works[It works]
     awk --> |yay| it_works
 ```
