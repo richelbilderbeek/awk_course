@@ -4,6 +4,7 @@ nav:
   - Start: index.md
   - Morning Session:
     - Overview: morning_session/overview.md
+    - What is Awk: morning_session/what_is_awk.md
   - Afternoon Session:
     - Overview: afternoon_session/overview.md
   - Miscelleneous:
