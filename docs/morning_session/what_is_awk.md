@@ -192,26 +192,26 @@ Of the 'To Awk Or Not', read:
 
 Which of these statements is true?
 
-- 1. AWK is a programming language
-- 2. AWK is an interpreted programming language
-- 3. AWK is a compiled programming language
-- 4. AWK works on text files
-- 5. AWK works on images
-- 6. AWK works on `.docx` files
-- 7. The programming language AWK can be spelled as Awk too
-- 8. The programming language AWK can be spelled as `awk` too
+- (1) AWK is a programming language
+- (2) AWK is an interpreted programming language
+- (3) AWK is a compiled programming language
+- (4) AWK works on text files
+- (5) AWK works on images
+- (6) AWK works on `.docx` files
+- (7) The programming language AWK can be spelled as Awk too
+- (8) The programming language AWK can be spelled as `awk` too
 
 ???- info "Solutions"
 
-    - 1. AWK is a programming language
+    - (1) AWK is a programming language
 
     Yes.
 
-    - 2. AWK is an interpreted programming language
+    - (2) AWK is an interpreted programming language
 
     Yes. For example, `gawk` is an AWK interpreter.
 
-    - 3. AWK is a compiled programming language
+    - (3) AWK is a compiled programming language
 
     No.
 
@@ -220,23 +220,23 @@ Which of these statements is true?
 
     C, C++, Fortran, Go and Rust are better examples of a compiled programming language.
 
-    - 4. AWK works on text files
+    - (4) AWK works on text files
 
     Yes.
 
-    - 5. AWK works on images
+    - (5) AWK works on images
 
     No: AWK works best on text files. 
 
     However, some image files, such as SVG, are text-based. 
     This means that AWK *can* work on those images.
 
-    - 6. AWK works on `.docx` files
+    - (6) AWK works on `.docx` files
 
     No: AWK works best on text files. A `.docx` files is zipped, 
     hence has binary data
 
-    - 7. The programming language AWK can be spelled as Awk too
+    - (7) The programming language AWK can be spelled as Awk too
 
     No. Where 'AWK' means the programming language, 'Awk'
     is used in a context with something else. 
@@ -245,7 +245,7 @@ Which of these statements is true?
     Awk (i.e. without 'GNU' in front of it). In that case too, 'Awk' is the
     name of the interpreter, not the language.
 
-    - 8. The programming language AWK can be spelled as `awk` too
+    - (8) The programming language AWK can be spelled as `awk` too
 
     No. Where 'AWK' means the programming language, `awk`
     is the name of a program called `awk`, 
