@@ -66,7 +66,7 @@ flowchart TD
 flowchart TD
 
     %% Give a white background to all nodes, instead of a transparent one
-    classDef node fill:#fff,color:#000,stroke:#000
+    %% classDef node fill:#fff,color:#000,stroke:#000
 
     AWK
 
@@ -96,10 +96,10 @@ flowchart TD
       end
     end
 
-    style programming_languages fill:#fff,color:#000,stroke:#000
-    style interpreted_languages fill:#fff,color:#000,stroke:#000
-    style compiled_languages fill:#fff,color:#000,stroke:#000
-    style interpreters fill:#fff,color:#000,stroke:#000
+    %% style programming_languages fill:#fff,color:#000,stroke:#000
+    %% style interpreted_languages fill:#fff,color:#000,stroke:#000
+    %% style compiled_languages fill:#fff,color:#000,stroke:#000
+    %% style interpreters fill:#fff,color:#000,stroke:#000
 
     AWK --> |is a | programming_languages
     AWK --> |is a | interpreted_language
