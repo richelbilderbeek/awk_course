@@ -2,15 +2,18 @@
 
 !!!- info "Learning objectives"
 
-    * .
+    - to understand what AWK is
+    - to understand the difference between AWK and Awk and `awk`
+    - to learn when to use AWK
 
 ???- question "For teachers"
 
     Teaching goals are:
 
+    - The learners get an idea what AWK is
+      - The learners connect AWK with something they know
+      - The learners know the difference between the words AWK, Awk and `awk`
     - The learners get an idea when to use AWK
-    - The learners connect AWK with something they know
-    - The learners know the difference between the words AWK, Awk and `awk`
 
     Other goals are:
 
@@ -26,104 +29,6 @@
 ## Overview
 
 In this session, we learn about AWK.
-
-
-
-These graph may be helpful:
-
-```mermaid
-flowchart TD
-
-  can_use_script[Can use a script?]
-  can_use_sed[Can use sed?]
-  can_use_grep[Can use grep?]
-
-  awk[Use AWK]
-  c[Use C]
-  sed[Use sed]
-  grep[Use grep]
-
-  compiled_language[Compiled language]
-  scripting_language[Scripting language]
-
-  stream_editor[Stream editor]
-  work_with_regular_expressions[Work with regular expressions]
-
-  awk --> |is a| scripting_language
-  c --> |is a| compiled_language
-  sed --> |is a| stream_editor
-  grep --> |allows to| work_with_regular_expressions
-
-  can_use_script --> |no| c
-  can_use_script --> |yes| can_use_sed
-  can_use_sed --> |no| awk
-  can_use_sed --> |yes| can_use_grep
-  can_use_grep --> |no| sed
-  can_use_grep --> |yes| grep
-```
-
-```mermaid
-flowchart TD
-
-    %% Give a white background to all nodes, instead of a transparent one
-    %% classDef node fill:#fff,color:#000,stroke:#000
-
-    AWK
-
-    subgraph interpreters[Interpreters]
-    awk
-    gawk
-    gnu_awk[GNU Awk]
-    interpreter
-    end
-
-    subgraph programming_languages[Programming languages]
-
-      subgraph compiled_languages[Compiled languages]
-        compiled_language[Compiled language]
-        C
-        Cpp[C++]
-        Fortran
-        Go
-        Rust
-      end
-
-      subgraph interpreted_languages[Interpreted languages]
-        interpreted_language[Interpreted language]
-        Julia
-        Python
-        R
-      end
-    end
-
-    %% style programming_languages fill:#fff,color:#000,stroke:#000
-    %% style interpreted_languages fill:#fff,color:#000,stroke:#000
-    %% style compiled_languages fill:#fff,color:#000,stroke:#000
-    %% style interpreters fill:#fff,color:#000,stroke:#000
-
-    AWK --> |is a | programming_languages
-    AWK --> |is a | interpreted_language
-    AWK --> |is run by| interpreters
-    interpreted_language --> |is run by| interpreter
-    interpreted_language <--> |is not| compiled_language
-    awk --> |is a| interpreter
-    gawk --> |is a| interpreter    
-    gawk --> |is an abbreviation of| gnu_awk
-
-    Julia --> |is a| interpreted_language
-    Python --> |is a| interpreted_language
-    R --> |is a| interpreted_language
-
-    C --> |is a| compiled_language
-    Cpp --> |is a| compiled_language
-    Fortran --> |is a| compiled_language
-    Go --> |is a| compiled_language
-    Rust --> |is a| compiled_language
-
-    AWK ~~~ C
-    AWK ~~~ programming_languages
-    AWK ~~~ R    
-```
 
 ## Exercises
 
@@ -182,13 +87,12 @@ flowchart TD
 
 !!!- info "Learning objectives"
 
-    - to be able to login to Rackham autonomously
+    - to understand what AWK is
+    - to understand the difference between AWK and Awk and `awk`
 
-Of the 'To Awk Or Not', read:
+Read:
 
-- [Main page](https://pmitev.github.io/to-awk-or-not/)
-
-
+- [The Wikipedia 'AWK' page](https://en.wikipedia.org/wiki/AWK)
 
 Which of these statements is true?
 
@@ -251,20 +155,109 @@ Which of these statements is true?
     is the name of a program called `awk`, 
     which is an AWK interpreter
 
-### Exercise 2: load the Python module
+    This graph puts it all into an overview:
 
-!!!- info "Learning objectives"
+    ```mermaid
+    flowchart TD
 
-    - to be able to load a Python version autonomously
+        %% Give a white background to all nodes, instead of a transparent one
+        %% classDef node fill:#fff,color:#000,stroke:#000
 
-Load Python version 3.10.8. 
-This is described at the UPPMAX pages on Python [here](http://docs.uppmax.uu.se/software/python/).
+        AWK
 
-### Exercise 3: write a 'Hello world' program
+        subgraph interpreters[Interpreters]
+        awk
+        gawk
+        gnu_awk[GNU Awk]
+        interpreter
+        end
 
-!!!- info "Learning objectives"
+        subgraph programming_languages[Programming languages]
 
-    - to be able to run a minimal Python program autonomously
+          subgraph compiled_languages[Compiled languages]
+            compiled_language[Compiled language]
+            C
+            Cpp[C++]
+            Fortran
+            Go
+            Rust
+          end
 
-Start Python and write a 'Hello world' program.
-This is described at the UPPMAX pages on Python programming [here](http://docs.uppmax.uu.se/software/python_programming/#use-the-python-interpreter)
+          subgraph interpreted_languages[Interpreted languages]
+            interpreted_language[Interpreted language]
+            Julia
+            Python
+            R
+          end
+        end
+
+        %% style programming_languages fill:#fff,color:#000,stroke:#000
+        %% style interpreted_languages fill:#fff,color:#000,stroke:#000
+        %% style compiled_languages fill:#fff,color:#000,stroke:#000
+        %% style interpreters fill:#fff,color:#000,stroke:#000
+
+        AWK --> |is a | programming_languages
+        AWK --> |is a | interpreted_language
+        AWK --> |is run by| interpreters
+        interpreted_language --> |is run by| interpreter
+        interpreted_language <--> |is not| compiled_language
+        awk --> |is a| interpreter
+        gawk --> |is a| interpreter    
+        gawk --> |is an abbreviation of| gnu_awk
+
+        Julia --> |is a| interpreted_language
+        Python --> |is a| interpreted_language
+        R --> |is a| interpreted_language
+
+        C --> |is a| compiled_language
+        Cpp --> |is a| compiled_language
+        Fortran --> |is a| compiled_language
+        Go --> |is a| compiled_language
+        Rust --> |is a| compiled_language
+
+        AWK ~~~ C
+        AWK ~~~ programming_languages
+        AWK ~~~ R    
+    ```
+
+### Exercise 2: when to use AWK?
+
+Read:
+
+- ['To Awk Or Not' main page](https://pmitev.github.io/to-awk-or-not/)
+
+
+???- info "Solutions"
+
+    This graph puts the same info into perspective:
+
+    ```mermaid
+    flowchart TD
+
+      can_use_script[Can use a script?]
+      can_use_sed[Can use sed?]
+      can_use_grep[Can use grep?]
+
+      awk[Use AWK]
+      c[Use C]
+      sed[Use sed]
+      grep[Use grep]
+
+      compiled_language[Compiled language]
+      scripting_language[Scripting language]
+
+      stream_editor[Stream editor]
+      work_with_regular_expressions[Work with regular expressions]
+
+      awk --> |is a| scripting_language
+      c --> |is a| compiled_language
+      sed --> |is a| stream_editor
+      grep --> |allows to| work_with_regular_expressions
+
+      can_use_script --> |no| c
+      can_use_script --> |yes| can_use_sed
+      can_use_sed --> |no| awk
+      can_use_sed --> |yes| can_use_grep
+      can_use_grep --> |no| sed
+      can_use_grep --> |yes| grep
+    ```
