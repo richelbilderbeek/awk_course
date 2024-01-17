@@ -1,9 +1,9 @@
 site_name: Awk course
 
 nav:
-  - Start: overview.md
+  - Start: ./overview.md
   - Misc:
-    - FAQ: faq.md
+    - FAQ: ./faq.md
 
 theme:
   name: material
