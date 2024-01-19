@@ -80,3 +80,32 @@
 - In the main room, random learners will be asked questions
   regarding those exercises.
   Say the answer you agreed upon as a group (i.e. not your personal answer!)
+
+```mermaid
+flowchart TD
+  subgraph main_room[Main room]
+    get_exercise[Get exercises]
+    done_exercise[Done exercises]
+    most_done_exercise[Most have done exercises]
+    closing_breakout_rooms[Closing breakout rooms]
+    feedback[Feedback]
+  end
+  subgraph breakout_room[Your initial breakout room]
+    do_exercise[Do exercises in group]
+  end
+  subgraph other_breakout_room[Another breakout room]
+    help_do_exercise[Help do exercises in group]
+  end
+
+  get_exercise --> |clear?| do_exercise
+  do_exercise --> |done!| done_exercise
+  do_exercise --> |no luck this time| feedback
+  done_exercise --> |help out| help_do_exercise
+  done_exercise --> |wait| most_done_exercise
+  help_do_exercise --> |done!| most_done_exercise
+  help_do_exercise --> |no luck this time| feedback
+  most_done_exercise --> |many learners in main room| closing_breakout_rooms
+  closing_breakout_rooms --> feedback
+```
+
+> Overview of the exercise procedure
