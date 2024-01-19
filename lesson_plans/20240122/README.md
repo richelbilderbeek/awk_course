@@ -51,6 +51,18 @@ Negative feedback that I will respond to:
 - 'The course goes too fast': this is an introduction, aimed at beginners.
   If even the beginners need more time, I must slow down
 
+## Ideas
+
+I claim:
+
+```
+There is no resource on AWK that is 
+- (1) free
+- (2) online
+- (3) has exercises
+- (4) assumes no Linux experience
+```
+
 ## Schedule
 
 In teaching cycles:
