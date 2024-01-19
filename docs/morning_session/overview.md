@@ -23,9 +23,20 @@ Time          | Topic
 
 ```mermaid
 flowchart TD
-    awk[AWK]
-    it_works[It works]
-    awk --> |yay| it_works
+
+  subgraph basic_linux[Basic Linux]
+    pipes
+    echo
+    printf
+    stdin
+  end
+
+  awk
+
+  stdin --> |need to know| pipes
+  printf --> |need to know| echo
+  pipes --> |need to know| printf
+  awk --> |need to know| stdin
 ```
 
 ## Links
