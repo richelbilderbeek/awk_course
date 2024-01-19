@@ -40,6 +40,10 @@ flowchart TD
     echo
     printf
     stdin
+    files[Files]
+    input[Input]
+    cat
+    editor[Text editor]
   end
   subgraph terms[Terms]
     regex[Regular expressions]
@@ -55,8 +59,12 @@ flowchart TD
   stdin --> |need to know| pipes
   printf --> |need to know| echo
   pipes --> |need to know| printf
-  awk --> |need to know| stdin
-
+  files --> |need to know| cat
+  files --> |need to know| editor
+  files --> |a type of| input
+  stdin --> |a type of| input
+  awk --> |reads| input
+ 
   %% Terms
   %% awk --> |need to know| regex
   awk --> |is a| filter
