@@ -30,19 +30,34 @@ To put in schedule:
 ```mermaid
 flowchart TD
 
+  subgraph tools[Tools]
+    awk
+    sed
+    grep
+  end
   subgraph basic_linux[Basic Linux]
     pipes
     echo
     printf
     stdin
   end
+  subgraph terms[Terms]
+    regex[Regular expressions]
+  end
 
-  awk
+  %% Tools
+  awk --> |can do| sed 
+  sed --> |can do| grep
+  grep --> |uses| regex
 
+  %% Basic Linux
   stdin --> |need to know| pipes
   printf --> |need to know| echo
   pipes --> |need to know| printf
   awk --> |need to know| stdin
+
+  %% Terms
+  %% awk --> |need to know| regex
 ```
 
 ## Links
