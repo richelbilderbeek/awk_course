@@ -63,6 +63,18 @@ There is no resource on AWK that is
 - (4) assumes no Linux experience
 ```
 
+My ideal lesson plan:
+
+- print a file
+- `$0`: print the whole line
+- `$1`: print the first column
+- `NF`:  print the number of columns
+- `$NF`:  print the last column
+- `NF-1`:  print the number of columns minus 1
+- `$(NF-1)`:  print the one-but-last column
+- conditionals, e.g. `$1 == "apple"`, `$2 < 42`
+- 
+
 ## Schedule
 
 In teaching cycles:
