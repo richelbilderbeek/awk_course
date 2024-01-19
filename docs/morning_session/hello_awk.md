@@ -40,6 +40,8 @@ Read:
 - [The Wikipedia 'AWK' page, 'Examples'](https://en.wikipedia.org/wiki/AWK#Examples), 
   section 'Hello, World!' only
 
+Then do:
+
 - Create a file called `hello_world.awk`, with the 'Hello, world!' example code
 - Run the AWK script using `awk -f hello_world.awk`
 
@@ -50,7 +52,7 @@ Read:
     - to run AWK from the command-line
 
 Creating a script for every AWK use is tedious. 
-Instead, we will be using AWK one-liners in the terminal.
+Instead, we will be using AWK one-liners in the terminal:
 
 - run the text of the AWK script as a oneliner, using single-quotes
   around the AWK code, i.e. `awk '[my awk code]'`,
@@ -79,8 +81,10 @@ Instead, we will be using AWK one-liners in the terminal.
 AWK code is often put between single quotes (`'`), instead of double quotes (`"`).
 Here we find out why.
 
-To experience why, rewrite the answer of the previous exercise to use double quotes.
-There are at least two rewrites possible!
+To experience why, do:
+
+- rewrite the answer of the previous exercise to use double quotes.
+  There are at least two rewrites possible!
 
 ???- info "Solution"
 
