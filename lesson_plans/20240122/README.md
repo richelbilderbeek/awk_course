@@ -7,6 +7,7 @@
 Teaching goals:
 
 - Learners feel that AWK is something they can do
+- Learners without a Linux background can follow
 - Learners work in small groups
 - Learners have enough breaks
 - Practice to use the fundamental teaching cycle (as discussed in Mike Bell's 'The 
@@ -29,6 +30,8 @@ Non-goals:
 - Use teaching materials developed by colleagues just to be nice.
   Instead, use free-online teaching materials developed by others,
   so that me and my colleagues do not need to maintain it
+- Discuss the history of AWK
+- Start from `sed` and `grep`
 
 Negative feedback that I will enjoy and not respond to:
 
