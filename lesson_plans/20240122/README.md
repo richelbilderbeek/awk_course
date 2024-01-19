@@ -29,8 +29,6 @@ Non-goals:
 - Use teaching materials developed by colleagues just to be nice.
   Instead, use free-online teaching materials developed by others,
   so that me and my colleagues do not need to maintain it
-- Learners have used a free and online book they can use for future reference.
-  Pavlin's material is too nice!
 
 Negative feedback that I will enjoy and not respond to:
 
@@ -58,3 +56,5 @@ Negative feedback that I will respond to:
 In teaching cycles:
 
 - What is AWK?
+- Install AWK
+

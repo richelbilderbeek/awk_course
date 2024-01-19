@@ -13,7 +13,7 @@ This module introduces the fundamentals of the AWK language.
 
 Time          | Topic
 --------------|-------------------------------
-09:00-10:00   | [Hello AWK](hello_awk.md)
+09:00-10:00   | [Hello AWK](hello_awk.md), [What is AWK](what_is_awk.md)
 10:00-10:15   | Break
 10:15-11:00   | .
 11:00-11:15   | Break
@@ -21,9 +21,9 @@ Time          | Topic
 
 To put in schedule:
 
- * 
- * [What is AWK](what_is_awk.md), 
  * [When to use AWK](when_to_use_awk.md) 
+ * [AWK as a filter](awk_as_a_filter.md)
+ * [Introduction](introduction.md)
  * [simple examples](simple_examples.md)
 
 ## Overview

@@ -2,28 +2,32 @@
 
 ## Exercises
 
-### Exercise 1: .
+### Exercise 1: a filter
 
 !!!- info "Learning objectives"
 
-    * .
+    * Use a filter
 
-Read:
+Read of [CLI text processing with GNU awk](https://learnbyexample.github.io/learn_gnuawk/):
 
-- [The Wikipedia page about AWK](https://en.wikipedia.org/wiki/AWK), abstract only
-- [The Wikipedia page about sed](https://en.wikipedia.org/wiki/Sed), abstract only
-- [The Wikipedia page about grep](https://en.wikipedia.org/wiki/Grep), abstract only
-- [CLI text processing with GNU awk](https://learnbyexample.github.io/learn_gnuawk/) chapter '3. Awk introduction', 
-  only first paragraph of section 'Filtering'
+- chapter '3. Awk introduction', section 'Filtering'
 
-Answer these questions:
+Answer these questions of that same chapter:
 
-- What is AWK?
-- What is grep?
-- What is sed?
+- 1
 
+### Exercise 2: a filter
 
-- [The Wikipedia page about stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin))
+!!!- info "Learning objectives"
 
-- What is stdin?
+    * Rehearse using a filter
 
+Read of [To awk or not](https://pmitev.github.io/to-awk-or-not):
+
+- chapter '1.Simple examples', section 'Let's begin simple', until the first exercise
+
+Then do:
+
+- the first exercise on that page:
+
+> Try to run the above example for "silver". What is different? How can one fix it?

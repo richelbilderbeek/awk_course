@@ -23,17 +23,7 @@
 
 ## Overview
 
-In this session, we learn about AWK.
-
-```mermaid
-flowchart TD
-
-    input --> AWK --> output
-
-    input_1[Female Anna\nMale Bert\nFemale Carla] --> AWK_1['/Male/'] --> output_1[Male Bert]
-```
-
-> AWK can be applied as a filter.
+In this session, we get a first idea what AWK is.
 
 ## Exercises
 
@@ -46,11 +36,12 @@ See the exercise procedure [here](exercise_procedure.md).
     - to understand what AWK is
     - to understand the difference between AWK and Awk and `awk`
 
-Read:
+*Scan* (i.e. get an idea of its content, **not** read in detail) the page:
 
 - [The Wikipedia 'AWK' page](https://en.wikipedia.org/wiki/AWK)
 
-Which of these statements is true?
+Search the page to determine which of these statements below is true, 
+and why they are true/false:
 
 - (1) AWK is a programming language
 - (2) AWK is an interpreted programming language

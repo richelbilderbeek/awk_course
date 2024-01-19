@@ -70,6 +70,12 @@ flowchart TD
 
 However, without knowing what these tools do, this wisdom is lost on us.
 
+Read the following text, skip terms you do not yet know:
+
+- [The Wikipedia page about AWK](https://en.wikipedia.org/wiki/AWK), abstract only
+- [The Wikipedia page about sed](https://en.wikipedia.org/wiki/Sed), abstract only
+- [The Wikipedia page about grep](https://en.wikipedia.org/wiki/Grep), abstract only
+
 Here is an overview of tools similar to `awk`, what they are and where they shine:
 
 Tool                                      |Description (as copied from their Wikipedia page)                                                                 |Shines when

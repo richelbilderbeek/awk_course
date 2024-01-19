@@ -2,9 +2,10 @@
 
 !!!- info "Learning objectives"
 
-    - to run a AWK interpreter
+    - to run an AWK interpreter
     - to run AWK from the command-line
     - to experience why single quote is most often used
+    - to run AWK on an input file
 
 ???- question "For teachers"
 
@@ -13,6 +14,7 @@
     - The learners have run an AWK interpreter
     - The learners have run AWK from the command-line
     - The learners have to experienced why single quote is most often used
+    - The learners have run AWK on an input file
 
     Lesson plan:
 
@@ -57,6 +59,8 @@ Instead, we will be using AWK one-liners in the terminal:
 - run the text of the AWK script as a oneliner, using single-quotes
   around the AWK code, i.e. `awk '[my awk code]'`,
   where `[my awk code]` is your AWK code.
+
+What does the AWK code do?
 
 !!! tip "Use a semicolon to put two statements on one line"
 
@@ -103,6 +107,33 @@ To experience why, do:
 Why is the AWK code put between single quotes (`'`), instead of double quotes (`"`)?
 
 Which theoretical event would cause this preference to change to use single quotes?
+
+### Exercise 4: run AWK on an input file
+
+!!!- info "Learning objectives"
+
+    - to run AWK on an input file
+
+It is common to run AWK on an input file.
+
+- Create an input file called `addr.txt` (it is a file used in the exercises of the book we use)
+
+```title="addr.txt"
+Hello World
+How are you
+This game is good
+Today is sunny
+12345
+You are funny
+```
+
+- Run the following command:
+
+```
+awk '/is/' addr.txt
+```
+
+What does `/is/` do?
 
 ## Links
 
