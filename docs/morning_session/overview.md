@@ -43,12 +43,13 @@ flowchart TD
   end
   subgraph terms[Terms]
     regex[Regular expressions]
+    filter
   end
 
   %% Tools
   awk --> |can do| sed 
   sed --> |can do| grep
-  grep --> |uses| regex
+  %% grep --> |uses| regex
 
   %% Basic Linux
   stdin --> |need to know| pipes
@@ -58,6 +59,10 @@ flowchart TD
 
   %% Terms
   %% awk --> |need to know| regex
+  awk --> |is a| filter
+  grep --> |is a| filter
+  sed --> |is a| filter
+  filter --> |uses| regex
 ```
 
 ## Links
