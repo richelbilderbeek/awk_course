@@ -1,5 +1,9 @@
 # awk_course
 
+This is the GitHub repository of the UPPMAX AWK course.
+
+A nicely-rendered website of this repo is at <https://richelbilderbeek.github.io/awk_course/>.
+
 ## Files used for continuous integration scripts
 
 Filename                           |Descriptions
