@@ -15,14 +15,13 @@ Time          | Topic
 --------------|-------------------------------
 09:00-10:00   | [Hello AWK](hello_awk.md), [What is AWK](what_is_awk.md)
 10:00-10:15   | Break
-10:15-11:00   | .
+10:15-11:00   | [AWK as a filter](awk_as_a_filter.md)
 11:00-11:15   | Break
 11:15-12:00   | .
 
 To put in schedule:
 
- * [When to use AWK](when_to_use_awk.md) 
- * [AWK as a filter](awk_as_a_filter.md)
+ * [When to use AWK](when_to_use_awk.md)
  * [Introduction](introduction.md)
  * [simple examples](simple_examples.md)
 
@@ -48,4 +47,6 @@ flowchart TD
 
 ## Links
 
- * [Book 'CLI text processing with GNU awk'](https://learnbyexample.github.io/learn_gnuawk/)
+ * [CLI text processing with GNU awk](https://learnbyexample.github.io/learn_gnuawk/): a book we use
+ * [To awk or not](https://pmitev.github.io/to-awk-or-not): course material we use
+

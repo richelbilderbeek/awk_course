@@ -2,20 +2,21 @@
 
 ## What is the goal of this repository?
 
-The goal of this repository is to use the 'To Awk Or Not?' materials
+The goal of this repository is to use existing AWK materials
 and put it into lesson plans. 
 
-## Why is the course on 'To Awk Or Not?'
+## Which AWK material is used?
 
-This repository is based on the material of <https://pmitev.github.io/to-awk-or-not/>,
-because it is -as far as I can see- the only free and online AWK
-resource that has both text and exercises.
+ * [CLI text processing with GNU awk](https://learnbyexample.github.io/learn_gnuawk/): a book
+ * [To awk or not](https://pmitev.github.io/to-awk-or-not): course material
 
-## Why not use the 'To Awk Or Not?' repository for these lessons?
+## What determined which AWK material is used?
 
-That repository does not allow `mermaid` plots.
-I will not change the setup of the 'To Awk Or Not?' repository.
-Hence, I needed another repository :-) 
+AWK material is used if it is all of these:
+
+- free (as in freedom)
+- online
+- has exercises
 
 ## Why is this a Fork from the UPPMAX repository?
 
