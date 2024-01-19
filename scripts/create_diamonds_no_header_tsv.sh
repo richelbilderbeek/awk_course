@@ -1,12 +1,3 @@
 #!/bin/bash
-wget https://raw.githubusercontent.com/tidyverse/ggplot2/main/data-raw/diamonds.csv
-
-tail -n +2 diamonds.csv > diamonds_no_header.csv
-
-rm diamonds.csv
-
-tr ',' '\t' < diamonds_no_header.csv > diamonds_no_header.tsv
-
-rm diamonds_no_header.csv
-
-mv diamonds_no_header.tsv ../data
+./create_diamonds_tsv.sh
+tail -n +2 ../data/diamonds.tsv > ../data/diamonds_no_header.tsv
