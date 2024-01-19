@@ -99,11 +99,11 @@ flowchart TD
 
   get_exercise --> |clear?| do_exercise
   do_exercise --> |done!| done_exercise
-  do_exercise --> |no luck this time| feedback
+  do_exercise --> |breakout rooms close| feedback
   done_exercise --> |help out| help_do_exercise
   done_exercise --> |wait| most_done_exercise
-  help_do_exercise --> |done!| most_done_exercise
-  help_do_exercise --> |no luck this time| feedback
+  help_do_exercise --> |done!| done_exercise
+  help_do_exercise --> |breakout rooms close| feedback
   most_done_exercise --> |many learners in main room| closing_breakout_rooms
   closing_breakout_rooms --> feedback
 ```
