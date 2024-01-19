@@ -224,3 +224,7 @@ Which of these statements is true?
         AWK ~~~ programming_languages
         AWK ~~~ R    
     ```
+
+## Links
+
+ * [Book 'CLI text processing with GNU awk'](https://learnbyexample.github.io/learn_gnuawk/)

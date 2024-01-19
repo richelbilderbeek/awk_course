@@ -218,3 +218,7 @@ Do you agree?
     Indeed, AWK works on tab-separated files, commonly having the `tsv`
     extension, where `tsv` is short for 
     [Tab-separated values](https://en.wikipedia.org/wiki/Tab-separated_values).
+
+## Links
+
+ * [Book 'CLI text processing with GNU awk'](https://learnbyexample.github.io/learn_gnuawk/)

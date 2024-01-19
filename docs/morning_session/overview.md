@@ -27,3 +27,7 @@ flowchart TD
     it_works[It works]
     awk --> |yay| it_works
 ```
+
+## Links
+
+ * [Book 'CLI text processing with GNU awk'](https://learnbyexample.github.io/learn_gnuawk/)
