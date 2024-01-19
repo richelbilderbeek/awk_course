@@ -2,13 +2,21 @@
 
 !!!- info "Learning objectives"
 
-    - print
+    - print a line
+    - print a column of a line
+    - print the line number
+    - print the number of columns
+    - print a multiplied value
 
 ???- question "For teachers"
 
     Teaching goals are:
 
-    - .
+    - Learners can print a line
+    - Learners can print a column of a line
+    - Learners can print the line number
+    - Learners can print the number of columns
+    - Learners can print a multiplied value
 
     Lesson plan:
 
@@ -181,7 +189,7 @@ and add the word 'gram' (separated by a whitespace)'.
 
 Confirm that this is true.
 
-### Exercise 2: printing
+### Exercise 2: explore data
 
 #### Download the data
 
@@ -193,31 +201,34 @@ wget https://raw.githubusercontent.com/richelbilderbeek/awk_course/master/data/d
 
 to download a file called `diamonds_no_header.tsv`.
 
-This file is a tab-separated file about diamonds and is [part a famous R package](https://ggplot2.tidyverse.org/reference/diamonds.html).
+This file is a tab-separated file about diamonds and 
+is part of the `ggplot2` R package.
+
+ * [Raw data](https://raw.githubusercontent.com/tidyverse/ggplot2/main/data-raw/diamonds.csv)
+ * [Data description](https://ggplot2.tidyverse.org/reference/diamonds.html)
 
 The dataset has the following columns:
 
 index|name   |description
 -----|-------|------------------------------------------------------------------
-1    |price  |price in US dollars ($326--$18,823)
-2    |carat  |weight of the diamond (0.2--5.01)
-3    |cut    |quality of the cut (Fair, Good, Very Good, Premium, Ideal)
-4    |color  |diamond colour, from D (best) to J (worst)
-5    |clarity|a measurement of how clear the diamond is (I1 (worst), SI2, SI1, VS2, VS1, VVS2, VVS1, IF (best))
-6    |x      |length in mm (0--10.74)
-7    |y      |width in mm (0--58.9)
-8    |z      |depth in mm (0--31.8)
-9    |depth  |total depth percentage = z / mean(x, y) = 2 * z / (x + y) (43--79)
-10   |table  |width of top of diamond relative to widest point (43--95)
-
+1    |carat  |weight of the diamond (0.2--5.01)
+2    |cut    |quality of the cut (Fair, Good, Very Good, Premium, Ideal)
+3    |color  |diamond colour, from D (best) to J (worst)
+4    |clarity|a measurement of how clear the diamond is (I1 (worst), SI2, SI1, VS2, VS1, VVS2, VVS1, IF (best))
+5    |depth  |total depth percentage = z / mean(x, y) = 2 * z / (x + y) (43--79)
+6    |table  |width of top of diamond relative to widest point (43--95)
+7    |price  |price in US dollars ($326--$18,823)
+8    |x      |length in mm (0--10.74)
+9    |y      |width in mm (0--58.9)
+10   |z      |depth in mm (0--31.8)
 
 #### Explore the data
 
 Using `awk` only:
 
 - show the number of diamonds in the dataset (in any clumsy way!)
+- show the number of columns in the dataset (in any clumsy way!)
 - show the prices of the diamonds in US dollars
 - show the prices of the diamonds in Swedish kroner, 
   assume 1 US dollar is 10.47 Swedish kroner
 - show the weight of the diamonds in kilo, 1 carat is 0.0002 kilo
-

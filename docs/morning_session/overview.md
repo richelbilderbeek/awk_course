@@ -13,14 +13,20 @@ This module introduces the fundamentals of the AWK language.
 
 Time          | Topic
 --------------|-------------------------------
-09:00-10:00   | [Hello AWK](hello_awk.md), [What is AWK](what_is_awk.md)
+09:00-10:00   | [print](print.md), [filtering on values](filtering_on_values.md)
 10:00-10:15   | Break
-10:15-11:00   | [AWK as a filter](awk_as_a_filter.md), [Regular expressions](regexps.md)
+10:15-11:00   | [BEGIN and END](begin_and_end.md), [variables](variables.md)
 11:00-11:15   | Break
-11:15-12:00   | [Basic Linux](basic_linux.md)
+11:15-12:00   | Associative arrays
 
 To put in schedule:
 
+ * Reading comma-seperated data
+ * [Hello AWK](hello_awk.md)
+ * [What is AWK](what_is_awk.md)
+ * [AWK as a filter](awk_as_a_filter.md)
+ * [Regular expressions](regexps.md)
+ * [Basic Linux](basic_linux.md)
  * [When to use AWK](when_to_use_awk.md)
  * [Introduction](introduction.md)
  * [simple examples](simple_examples.md)
