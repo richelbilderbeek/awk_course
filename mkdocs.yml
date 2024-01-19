@@ -1,13 +1,18 @@
-site_name: Awk course
+site_name: AWK course
 
 nav:
-  - Start: overview.md
-  - Misc:
-    - FAQ: faq.md
+  - Start: index.md
+  - Morning Session:
+    - Overview: morning_session/overview.md
+    - What is AWK: morning_session/what_is_awk.md
+  - Afternoon Session:
+    - Overview: afternoon_session/overview.md
+  - Miscelleneous:
+    - FAQ: misc/faq.md
 
 theme:
   name: material
-  greetings: Welcome to the UPPMAX Awk course
+  greetings: Welcome to the UPPMAX AWK course
   font:
     # text: Lato
     code: JetBrains Mono
