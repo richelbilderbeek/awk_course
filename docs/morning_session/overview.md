@@ -21,6 +21,7 @@ Time          | Topic
 
 To put in schedule:
 
+ * Matching on a regex
  * Reading comma-seperated data
  * [Hello AWK](hello_awk.md)
  * [What is AWK](what_is_awk.md)
@@ -36,11 +37,21 @@ To put in schedule:
 ```mermaid
 flowchart TD
 
+  subgraph awk_facets[AWK facets]
+    print[Print]
+    filtering_on_values[Filtering on values]
+    begin_and_end[BEGIN and END]
+    variables[Variables]
+    associative_arrays[Associative arrays]
+    filtering_on_regex[Filtering on regular expressions]
+  end
+
   subgraph tools[Tools]
     awk
     sed
     grep
   end
+
   subgraph basic_linux[Basic Linux]
     pipes
     echo
@@ -51,10 +62,13 @@ flowchart TD
     cat
     editor[Text editor]
   end
-  subgraph terms[Terms]
-    regex[Regular expressions]
-    filter
-  end
+
+  %% Facets of AWK
+  filtering_on_values --> |needs| print
+  begin_and_end --> |needs| filtering_on_values
+  variables --> |needs| begin_and_end
+  associative_arrays --> |needs| variables
+  filtering_on_regex --> |needs| filtering_on_values
 
   %% Tools
   awk --> |can do| sed 
@@ -70,13 +84,7 @@ flowchart TD
   files --> |a type of| input
   stdin --> |a type of| input
   awk --> |reads| input
- 
-  %% Terms
-  %% awk --> |need to know| regex
-  awk --> |is a| filter
-  grep --> |is a| filter
-  sed --> |is a| filter
-  filter --> |uses| regex
+  
 ```
 
 ## Links
