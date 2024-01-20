@@ -22,7 +22,10 @@ Time          | Topic
 To put in schedule:
 
  * Matching on a regex
- * Reading comma-seperated data
+ * [Working with comma-separated values](working_with_csvs.md)
+
+Extra:
+
  * [Hello AWK](hello_awk.md)
  * [What is AWK](what_is_awk.md)
  * [AWK as a filter](awk_as_a_filter.md)
@@ -44,6 +47,7 @@ flowchart TD
     variables[Variables]
     associative_arrays[Associative arrays]
     filtering_on_regex[Filtering on regular expressions]
+    comma_as_separator[Comma as a separator]
   end
 
   subgraph tools[Tools]
@@ -65,6 +69,7 @@ flowchart TD
 
   %% Facets of AWK
   filtering_on_values --> |needs| print
+  comma_as_separator --> |needs| print
   begin_and_end --> |needs| filtering_on_values
   variables --> |needs| begin_and_end
   associative_arrays --> |needs| variables
@@ -84,7 +89,7 @@ flowchart TD
   files --> |a type of| input
   stdin --> |a type of| input
   awk --> |reads| input
-  
+
 ```
 
 ## Links
