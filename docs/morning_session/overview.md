@@ -17,7 +17,7 @@ Time          | Topic
 10:00-10:15   | Break
 10:15-11:00   | [BEGIN and END](begin_and_end.md), [variables](variables.md)
 11:00-11:15   | Break
-11:15-12:00   | Associative arrays
+11:15-12:00   | [Associative arrays](associative_arrays.md)
 
 To put in schedule:
 
