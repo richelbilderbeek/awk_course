@@ -232,3 +232,10 @@ Using `awk` only:
 - show the prices of the diamonds in Swedish kroner, 
   assume 1 US dollar is 10.47 Swedish kroner
 - show the weight of the diamonds in kilo, 1 carat is 0.0002 kilo
+
+Answer the question:
+
+- At the start of this session, **two ** ways to print all lines
+  were shown (`awk '{ print }' coins.txt` and `awk '{ print $0 }' coins.txt`).
+  Although they do exactly the same thing, why were both ways shown?
+
