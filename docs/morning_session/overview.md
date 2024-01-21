@@ -43,6 +43,6 @@ flowchart TD
 
 ## Links
 
- * [CLI text processing with GNU awk](https://learnbyexample.github.io/learn_gnuawk/): a book we use
- * [To awk or not](https://pmitev.github.io/to-awk-or-not): course material we use
+ * [CLI text processing with GNU awk](https://learnbyexample.github.io/learn_gnuawk/)
+ * [To awk or not](https://pmitev.github.io/to-awk-or-not)
 
