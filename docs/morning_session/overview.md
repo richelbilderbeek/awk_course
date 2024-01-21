@@ -17,12 +17,11 @@ Time          | Topic
 10:00-10:15   | Break
 10:15-11:00   | [BEGIN and END](begin_and_end.md), [variables](variables.md)
 11:00-11:15   | Break
-11:15-12:00   | [Associative arrays](associative_arrays.md)
+11:15-12:00   | [Associative arrays](associative_arrays.md), [working with comma-separated values](working_with_csvs.md)
 
-To put in schedule:
+To afternoon:
 
- * Matching on a regex
- * [Working with comma-separated values](working_with_csvs.md)
+ * [Matching on a regex](regexps.md)
 
 Extra:
 

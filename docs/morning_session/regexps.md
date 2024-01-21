@@ -119,3 +119,88 @@ bookoos
 ```
 
 > From <https://www.thefreedictionary.com/words-containing-book>
+
+### Exercise 4: confirming things are true
+
+!!!- info "Learning objectives"
+
+    - experience the regular expressions in AWK
+
+#### Download the data
+
+In a terminal, do:
+
+```
+wget https://github.com/devstronomy/nasa-data-scraper/raw/master/data/csv/satellites.csv
+```
+
+to download a file called `satellites.csv`.
+
+This file is a comma-separated file about the planets and 
+satellites in our solar system.
+
+The dataset has the following columns:
+
+index|name
+-----|----------
+1    |`planet`
+2    |`name`
+3    |`gm`
+4    |`radius`
+5    |`density`
+6    |`magnitude`
+7    |`albedo`
+
+We do not need to know what all these things mean.
+
+#### match a column element
+
+In a terminal, in the same folder as where the data is downloaded, do:
+
+```
+awk -F "," '$2 ~ /on/ { print $0 } ' satellites.csv
+```
+
+In English, this is: 'For all lines of which the second column matches the
+regex `on`, show the whole line. 
+Assume that the file uses a comma as a field separator'.
+
+Confirm that this is true.
+
+#### match with a sentence with explicit `$0`
+
+In a terminal, in the same folder as where the data is downloaded, do:
+
+```
+awk -F "," '$0 ~ /rth/ { print $0 } ' satellites.csv
+```
+
+In English, this is: 'For all lines of which the whole line matches the
+regex `rth`, show the whole line. 
+Assume that the file uses a comma as a field separator'.
+
+Confirm that this is true.
+
+#### match with a sentence with an implicit `$0`
+
+In a terminal, in the same folder as where the data is downloaded, do:
+
+```
+awk -F "," '/rth/ { print $0 } ' satellites.csv
+```
+
+In English, this is: 'For all lines of which the whole line matches the
+regex `rth`, show the whole line. 
+Assume that the file uses a comma as a field separator'.
+
+Confirm that this is true.
+
+#### Explore the data
+
+Using `awk` only:
+
+- find all the satellites that contain `ir`
+- find all the satellites that end with `ir`
+- find all the satellites that end with `on` without a vowel (i.e. `aeoui`) 
+  before `on`. For example: `moon` is invalid, as it has the vowel `o` before `on`
+- find all the satellites with a number
