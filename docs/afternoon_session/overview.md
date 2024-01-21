@@ -19,14 +19,6 @@ Time          | Topic
 15:00-16:00   | Break
 15:15-16:00   | [Related tools](related_tools.md)
 
-Leave out:
-
- * [Hello AWK](hello_awk.md)
- * [AWK as a filter](awk_as_a_filter.md)
- * [When to use AWK](when_to_use_awk.md)
- * [Introduction](introduction.md)
- * [simple examples](simple_examples.md)
-
 ## Overview
 
 ```mermaid
