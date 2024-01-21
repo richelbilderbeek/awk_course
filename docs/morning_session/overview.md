@@ -36,17 +36,6 @@ flowchart TD
     comma_as_separator[Comma as a separator]
   end
 
-  subgraph basic_linux[Basic Linux]
-    pipes
-    echo
-    printf
-    stdin
-    files[Files]
-    input[Input]
-    cat
-    editor[Text editor]
-  end
-
   %% Facets of AWK
   filtering_on_values --> |needs| print
   comma_as_separator --> |needs| print
@@ -54,18 +43,6 @@ flowchart TD
   variables --> |needs| begin_and_end
   associative_arrays --> |needs| variables
   filtering_on_regex --> |needs| filtering_on_values
-
-
-  %% Basic Linux
-  stdin --> |need to know| pipes
-  printf --> |need to know| echo
-  pipes --> |need to know| printf
-  files --> |need to know| cat
-  files --> |need to know| editor
-  files --> |a type of| input
-  stdin --> |a type of| input
-  awk --> |reads| input
-
 ```
 
 ## Links
