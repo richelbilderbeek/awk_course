@@ -24,17 +24,13 @@ Time          | Topic
 ```mermaid
 flowchart TD
 
-  awk[[AWK]]
-
-  subgraph awk_facets[AWK facets]
-    print[Print]
-    filtering_on_values[Filtering on values]
-    begin_and_end[BEGIN and END]
-    variables[Variables]
-    associative_arrays[Associative arrays]
-    filtering_on_regex[Filtering on regular expressions]
-    comma_as_separator[Comma as a separator]
-  end
+  print[Print]
+  filtering_on_values[Filtering on values]
+  begin_and_end[BEGIN and END]
+  variables[Variables]
+  associative_arrays[Associative arrays]
+  filtering_on_regex[Filtering on regular expressions]
+  comma_as_separator[Comma as a separator]
 
   %% Facets of AWK
   filtering_on_values --> |needs| print
