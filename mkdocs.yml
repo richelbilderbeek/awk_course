@@ -4,7 +4,10 @@ nav:
   - Start: index.md
   - Morning Session:
     - Overview: morning_session/overview.md
-    - What is AWK: morning_session/what_is_awk.md
+    - Print: morning_session/print.md
+    - Filtering on values: morning_session/filtering_on_values.md
+    - BEGIN and END: morning_session/begin_and_end.md
+    - Variables: morning_session/variables.md
   - Afternoon Session:
     - Overview: afternoon_session/overview.md
   - Miscelleneous:

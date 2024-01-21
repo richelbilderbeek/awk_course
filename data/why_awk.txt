@@ -1,0 +1,8 @@
+"The Enlightened Ones say that....
+
+- You should never use C if you can do it with a script;
+- You should never use a script if you can do it with awk;
+- Never use awk if you can do it with sed;
+- Never use sed if you can do it with grep." 
+
+Source: http://web.archive.org/web/20160324050308/http://awk.info/?whygawk

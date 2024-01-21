@@ -7,6 +7,7 @@
 Teaching goals:
 
 - Learners feel that AWK is something they can do
+- Learners without a Linux background can follow
 - Learners work in small groups
 - Learners have enough breaks
 - Practice to use the fundamental teaching cycle (as discussed in Mike Bell's 'The 
@@ -29,6 +30,8 @@ Non-goals:
 - Use teaching materials developed by colleagues just to be nice.
   Instead, use free-online teaching materials developed by others,
   so that me and my colleagues do not need to maintain it
+- Discuss the history of AWK
+- Start from `sed` and `grep`
 
 Negative feedback that I will enjoy and not respond to:
 
@@ -50,6 +53,30 @@ Negative feedback that I will respond to:
 
 - 'The course goes too fast': this is an introduction, aimed at beginners.
   If even the beginners need more time, I must slow down
+
+## Ideas
+
+I claim:
+
+```
+There is no resource on AWK that is 
+- (1) free
+- (2) online
+- (3) has exercises
+- (4) assumes no Linux experience
+```
+
+My ideal lesson plan:
+
+- print a file
+- `$0`: print the whole line
+- `$1`: print the first column
+- `NF`:  print the number of columns
+- `$NF`:  print the last column
+- `NF-1`:  print the number of columns minus 1
+- `$(NF-1)`:  print the one-but-last column
+- conditionals, e.g. `$1 == "apple"`, `$2 < 42`
+- 
 
 ## Schedule
 

@@ -25,6 +25,8 @@
 
 In this session, we get a first idea what AWK is.
 
+AWK is a interpreted programming language, that processes tabular data.
+
 ## Exercises
 
 See the exercise procedure [here](exercise_procedure.md).

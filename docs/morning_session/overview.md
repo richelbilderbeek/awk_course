@@ -13,14 +13,27 @@ This module introduces the fundamentals of the AWK language.
 
 Time          | Topic
 --------------|-------------------------------
-09:00-10:00   | [Hello AWK](hello_awk.md), [What is AWK](what_is_awk.md)
+09:00-10:00   | [print](print.md), [filtering on values](filtering_on_values.md)
 10:00-10:15   | Break
-10:15-11:00   | [AWK as a filter](awk_as_a_filter.md)
+10:15-11:00   | [BEGIN and END](begin_and_end.md), [variables](variables.md)
 11:00-11:15   | Break
-11:15-12:00   | .
+11:15-12:00   | [Associative arrays](associative_arrays.md), [working with comma-separated values](working_with_csvs.md)
 
-To put in schedule:
+To afternoon:
 
+ * [Matching on a regex](regexps.md)
+
+Extra:
+
+ * TODO: [Related tools](related_tools.md)
+ * [Regular expressions](regexps.md)
+ * [Basic Linux](basic_linux.md)
+
+Leave out:
+
+ * [Hello AWK](hello_awk.md)
+ * [What is AWK](what_is_awk.md)
+ * [AWK as a filter](awk_as_a_filter.md)
  * [When to use AWK](when_to_use_awk.md)
  * [Introduction](introduction.md)
  * [simple examples](simple_examples.md)
@@ -30,11 +43,18 @@ To put in schedule:
 ```mermaid
 flowchart TD
 
-  subgraph tools[Tools]
-    awk
-    sed
-    grep
+  awk[[AWK]]
+
+  subgraph awk_facets[AWK facets]
+    print[Print]
+    filtering_on_values[Filtering on values]
+    begin_and_end[BEGIN and END]
+    variables[Variables]
+    associative_arrays[Associative arrays]
+    filtering_on_regex[Filtering on regular expressions]
+    comma_as_separator[Comma as a separator]
   end
+
   subgraph basic_linux[Basic Linux]
     pipes
     echo
@@ -45,15 +65,15 @@ flowchart TD
     cat
     editor[Text editor]
   end
-  subgraph terms[Terms]
-    regex[Regular expressions]
-    filter
-  end
 
-  %% Tools
-  awk --> |can do| sed 
-  sed --> |can do| grep
-  %% grep --> |uses| regex
+  %% Facets of AWK
+  filtering_on_values --> |needs| print
+  comma_as_separator --> |needs| print
+  begin_and_end --> |needs| filtering_on_values
+  variables --> |needs| begin_and_end
+  associative_arrays --> |needs| variables
+  filtering_on_regex --> |needs| filtering_on_values
+
 
   %% Basic Linux
   stdin --> |need to know| pipes
@@ -64,13 +84,7 @@ flowchart TD
   files --> |a type of| input
   stdin --> |a type of| input
   awk --> |reads| input
- 
-  %% Terms
-  %% awk --> |need to know| regex
-  awk --> |is a| filter
-  grep --> |is a| filter
-  sed --> |is a| filter
-  filter --> |uses| regex
+
 ```
 
 ## Links
