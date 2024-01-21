@@ -24,7 +24,9 @@ In this session, we learn about the Linux tools related to `awk`.
 ```mermaid
 flowchart TD
 
-  awk
+  classDef focus_node fill:#fff,color:#000,stroke-width:4px
+
+  awk:::focus_node
   cut
   grep
   join

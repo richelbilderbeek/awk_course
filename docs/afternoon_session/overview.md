@@ -21,6 +21,8 @@ Time          | Topic
 
 ## Overview
 
+### Facets of AWK
+
 ```mermaid
 flowchart TD
 
@@ -39,6 +41,83 @@ flowchart TD
   variables --> |needs| begin_and_end
   associative_arrays --> |needs| variables
   filtering_on_regex --> |needs| filtering_on_values
+```
+
+### AWK as a programming language
+
+```mermaid
+flowchart TD
+
+    %% Give a white background to all nodes, instead of a transparent one
+    %% classDef node fill:#fff,color:#000,stroke:#000
+    classDef focus_node fill:#fff,color:#000,stroke-width:4px
+
+    subgraph interpreters[Interpreters]
+    awk
+    gawk
+    gnu_awk[GNU Awk]
+    interpreter
+    end
+
+    subgraph programming_languages[Programming languages]
+
+      subgraph compiled_languages[Compiled languages]
+        compiled_language[Compiled language]
+      end
+
+      subgraph interpreted_languages[Interpreted languages]
+        interpreted_language[Interpreted language]
+        AWK:::focus_node
+      end
+    end
+
+    interpreted_language --> |is run by| interpreter
+    interpreted_language <--> |is not| compiled_language
+    awk --> |is a| interpreter
+    gawk --> |is a| interpreter    
+    gawk --> |is an abbreviation of| gnu_awk
+
+    AWK --> |is a| interpreted_language
+
+```
+
+### AWK and its friends
+
+```mermaid
+flowchart TD
+
+  classDef focus_node fill:#fff,color:#000,stroke-width:4px
+
+  awk:::focus_node
+  cut
+  grep
+  join
+  sed
+  tr
+  wc
+
+  regexps[Regular expressions]
+  split_data_in_columns[Split data into columns]
+  count[Count]
+  merge_tables[Merge tables]
+  replace[Replace]
+
+  %% Tools
+  awk --> |can do| regexps
+  sed --> |can do| regexps
+  grep --> |can do| regexps
+
+  awk --> |can do| split_data_in_columns
+  cut --> |can do| split_data_in_columns
+
+  awk --> |can do| count 
+  wc --> |can do| count
+
+  awk --> |can do| replace
+  tr --> |can do| replace
+  sed --> |can do| replace
+
+  join --> |can do| merge_tables
 ```
 
 ## Links
