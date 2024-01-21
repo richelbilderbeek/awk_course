@@ -24,28 +24,13 @@ Time          | Topic
 ```mermaid
 flowchart TD
 
-  awk[[AWK]]
-
-  subgraph awk_facets[AWK facets]
-    print[Print]
-    filtering_on_values[Filtering on values]
-    begin_and_end[BEGIN and END]
-    variables[Variables]
-    associative_arrays[Associative arrays]
-    filtering_on_regex[Filtering on regular expressions]
-    comma_as_separator[Comma as a separator]
-  end
-
-  subgraph basic_linux[Basic Linux]
-    pipes
-    echo
-    printf
-    stdin
-    files[Files]
-    input[Input]
-    cat
-    editor[Text editor]
-  end
+  print[Print]
+  filtering_on_values[Filtering on values]
+  begin_and_end[BEGIN and END]
+  variables[Variables]
+  associative_arrays[Associative arrays]
+  filtering_on_regex[Filtering on regular expressions]
+  comma_as_separator[Comma as a separator]
 
   %% Facets of AWK
   filtering_on_values --> |needs| print
@@ -54,18 +39,6 @@ flowchart TD
   variables --> |needs| begin_and_end
   associative_arrays --> |needs| variables
   filtering_on_regex --> |needs| filtering_on_values
-
-
-  %% Basic Linux
-  stdin --> |need to know| pipes
-  printf --> |need to know| echo
-  pipes --> |need to know| printf
-  files --> |need to know| cat
-  files --> |need to know| editor
-  files --> |a type of| input
-  stdin --> |a type of| input
-  awk --> |reads| input
-
 ```
 
 ## Links
