@@ -19,25 +19,6 @@ Time          | Topic
 11:00-11:15   | Break
 11:15-12:00   | [Associative arrays](associative_arrays.md), [working with comma-separated values](working_with_csvs.md)
 
-To afternoon:
-
- * [Matching on a regex](regexps.md)
-
-Extra:
-
- * TODO: [Related tools](related_tools.md)
- * [Regular expressions](regexps.md)
- * [Basic Linux](basic_linux.md)
-
-Leave out:
-
- * [Hello AWK](hello_awk.md)
- * [What is AWK](what_is_awk.md)
- * [AWK as a filter](awk_as_a_filter.md)
- * [When to use AWK](when_to_use_awk.md)
- * [Introduction](introduction.md)
- * [simple examples](simple_examples.md)
-
 ## Overview
 
 ```mermaid

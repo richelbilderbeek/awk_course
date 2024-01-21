@@ -1,15 +1,83 @@
-# awk_course
+# AWK course
 
-This is the teaching material for the UPPMAX AWK course.
+This module introduces the fundamentals of the AWK language. 
 
-This repository is based on the material of <https://pmitev.github.io/to-awk-or-not/>
-and puts it into teaching cycles.
+!!! info "Content"
 
- * [FAQ](faq.md)
+    This is the teaching material for the UPPMAX AWK course.
+
+    This repository is based on the material of <https://pmitev.github.io/to-awk-or-not/>
+    and puts it into teaching cycles.
+    
+## Schedule
+
+Time          | Topic
+--------------|-------------------------------
+13:00-14:00   | [Regular expressions](regexps.md)
+14:00-14:15   | Break
+14:15-15:00   | [What is AWK](what_is_awk.md), [Basic Linux](basic_linux.md)
+15:00-16:00   | Break
+15:15-16:00   | [Related tools](related_tools.md)
+
+Leave out:
+
+ * [Hello AWK](hello_awk.md)
+ * [AWK as a filter](awk_as_a_filter.md)
+ * [When to use AWK](when_to_use_awk.md)
+ * [Introduction](introduction.md)
+ * [simple examples](simple_examples.md)
 
 ## Overview
 
 ```mermaid
 flowchart TD
-    awk[AWK]
+
+  awk[[AWK]]
+
+  subgraph awk_facets[AWK facets]
+    print[Print]
+    filtering_on_values[Filtering on values]
+    begin_and_end[BEGIN and END]
+    variables[Variables]
+    associative_arrays[Associative arrays]
+    filtering_on_regex[Filtering on regular expressions]
+    comma_as_separator[Comma as a separator]
+  end
+
+  subgraph basic_linux[Basic Linux]
+    pipes
+    echo
+    printf
+    stdin
+    files[Files]
+    input[Input]
+    cat
+    editor[Text editor]
+  end
+
+  %% Facets of AWK
+  filtering_on_values --> |needs| print
+  comma_as_separator --> |needs| print
+  begin_and_end --> |needs| filtering_on_values
+  variables --> |needs| begin_and_end
+  associative_arrays --> |needs| variables
+  filtering_on_regex --> |needs| filtering_on_values
+
+
+  %% Basic Linux
+  stdin --> |need to know| pipes
+  printf --> |need to know| echo
+  pipes --> |need to know| printf
+  files --> |need to know| cat
+  files --> |need to know| editor
+  files --> |a type of| input
+  stdin --> |a type of| input
+  awk --> |reads| input
+
 ```
+
+## Links
+
+ * [CLI text processing with GNU awk](https://learnbyexample.github.io/learn_gnuawk/): a book we use
+ * [To awk or not](https://pmitev.github.io/to-awk-or-not): course material we use
+
