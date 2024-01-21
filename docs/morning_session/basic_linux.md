@@ -114,6 +114,7 @@ Do:
     You should never use a script if you can do it with awk;
     Never use awk if you can do it with sed;
     Never use sed if you can do it with grep." 
+
 ```
 
 Then, in a terminal, in the same folder as `why_awk.txt`, do:
@@ -125,29 +126,22 @@ Then, in a terminal, in the same folder as `why_awk.txt`, do:
 
 Express in your own words: what does `cat` do?
 
-
-### Exercise 4: `rev`
+### Exercise 4: `wc`
 
 !!!- info "Learning objectives"
 
-    - Use `rev`
+    - Use `wc`
 
 Read:
 
-- [The top part of the Wikipedia about page on 'rev'](https://en.wikipedia.org/wiki/Cowsay)
+- [The top part of the Wikipedia about page on 'wc'](https://en.wikipedia.org/wiki/Wc_(Unix))
 
 Then, in a terminal, do:
 
-- `man rev`
-- `rev why_awk.txt`
+- `man wc`
+- `wc why_awk.txt`
 
-Express in your own words: what does `rev` do?
-
-???- question "Why do we learn `rev`? It is useless!"
-
-    `rev` is commonly used for teaching purposes. 
-    Also in this session, we will use `rev` as a simple
-    program to create output.
+Express in your own words: what does `wc` do?
 
 ### Exercise 5: a UNIX pipeline
 

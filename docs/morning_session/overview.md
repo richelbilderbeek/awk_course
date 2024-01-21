@@ -26,11 +26,15 @@ To put in schedule:
 
 Extra:
 
+ * TODO: [Related tools](related_tools.md)
+ * [Regular expressions](regexps.md)
+ * [Basic Linux](basic_linux.md)
+
+Leave out:
+
  * [Hello AWK](hello_awk.md)
  * [What is AWK](what_is_awk.md)
  * [AWK as a filter](awk_as_a_filter.md)
- * [Regular expressions](regexps.md)
- * [Basic Linux](basic_linux.md)
  * [When to use AWK](when_to_use_awk.md)
  * [Introduction](introduction.md)
  * [simple examples](simple_examples.md)
@@ -40,6 +44,8 @@ Extra:
 ```mermaid
 flowchart TD
 
+  awk[[AWK]]
+
   subgraph awk_facets[AWK facets]
     print[Print]
     filtering_on_values[Filtering on values]
@@ -48,12 +54,6 @@ flowchart TD
     associative_arrays[Associative arrays]
     filtering_on_regex[Filtering on regular expressions]
     comma_as_separator[Comma as a separator]
-  end
-
-  subgraph tools[Tools]
-    awk
-    sed
-    grep
   end
 
   subgraph basic_linux[Basic Linux]
@@ -75,10 +75,6 @@ flowchart TD
   associative_arrays --> |needs| variables
   filtering_on_regex --> |needs| filtering_on_values
 
-  %% Tools
-  awk --> |can do| sed 
-  sed --> |can do| grep
-  %% grep --> |uses| regex
 
   %% Basic Linux
   stdin --> |need to know| pipes
