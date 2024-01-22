@@ -1,6 +1,6 @@
 # Exercise procedure
 
-???- info "For teachers"
+???- info "For teachers: why this setup?"
 
     > You will be put into Zoom Breakout rooms, in random pairs.
 
@@ -65,6 +65,43 @@
 
     This is form is described as 'Think, Pair, Share' in 'The Fundamentals
     of Teaching' by Mike Bell
+
+???- info "For teachers: breakout room visit policy"
+
+    The goal of visiting the breakout room,
+    is to ensure there is a learning environment.
+    It should be avoided to lecture or correct the learners,
+    as *they* need to think, read and practice.
+
+    ```
+    flowchart TD
+      question_asked[Learners ask a question?]
+      maybe_answer[Reply, maybe answer the question]
+      how_many_cameras[How many camaras are on?]
+      concentrated[Do the learners appear concentrated?]
+      discussion[Are the learners having a useful discussion?]
+      arguing[Are the learners arguing?]
+      chatting[Are the learners chatting informally?]
+      huh[Then what are they doing?]
+
+      fix[Re-establish learning environment]
+      next[Go to the next breakout room]
+
+      question_asked --> |Yes| maybe_answer
+      question_asked --> |No| how_many_cameras
+      maybe_answer --> |Done| how_many_cameras
+      how_many_cameras --> |Zero or one| next
+      how_many_cameras --> |Two| concentrated
+      concentrated --> |Yes| next
+      concentrated --> |No| discussion
+      discussion --> |Yes| next
+      discussion --> |No| arguing
+      arguing --> |Yes| fix
+      arguing --> |No| chatting
+      chatting --> |Yes| fix
+      chatting --> |No| huh
+      fix --> |Done| next
+    ```
 
 - You will be put into Zoom Breakout rooms, in random pairs.
 - There is no silent room.

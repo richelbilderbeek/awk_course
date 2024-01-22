@@ -90,6 +90,35 @@ that learning can take place and is taking place.
 - Q: If, in a breakout room, one or both learners ask a question to you. What do you do?
 - A: Determine if you should answer: have they discussed together already? If yes, help them arrive at finding the right answer. Only give a direct answer as a last option
 
+```mermaid
+flowchart TD
+  question_asked[Learners ask a question?]
+  maybe_answer[Reply, maybe answer the question]
+  how_many_cameras[How many camaras are on?]
+  concentrated[Do the learners appear concentrated?]
+  discussion[Are the learners having a useful discussion?]
+  arguing[Are the learners arguing?]
+  chatting[Are the learners chatting informally?]
+  huh[Then what are they doing?]
+
+  fix[Re-establish learning environment]
+  next[Go to the next breakout room]
+
+  question_asked --> |Yes| maybe_answer
+  question_asked --> |No| how_many_cameras
+  maybe_answer --> |Done| how_many_cameras
+  how_many_cameras --> |Zero or one| next
+  how_many_cameras --> |Two| concentrated
+  concentrated --> |Yes| next
+  concentrated --> |No| discussion
+  discussion --> |Yes| next
+  discussion --> |No| arguing
+  arguing --> |Yes| fix
+  arguing --> |No| chatting
+  chatting --> |Yes| fix
+  chatting --> |No| huh
+  fix --> |Done| next
+```
 
 ## Schedule
 
@@ -97,3 +126,5 @@ that learning can take place and is taking place.
 - Poll: Who knows what grep is?
 - Poll: Who knows what sed is?
 - Start cycles
+
+
