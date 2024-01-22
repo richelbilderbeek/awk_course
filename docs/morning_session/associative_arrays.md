@@ -216,3 +216,8 @@ Using `awk` only:
 - imagine you have each of these cars once. You want each of them to
   drive one city mile. How much gallons of each type of fuel do you need?
 
+Think:
+
+- There are multiple way to increase an element in an array by one.
+  Why so many? Is there a difference?
+

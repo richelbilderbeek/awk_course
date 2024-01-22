@@ -1,13 +1,6 @@
 # AWK course
 
 This module introduces the fundamentals of the AWK language. 
-
-!!! info "Content"
-
-    This is the teaching material for the UPPMAX AWK course.
-
-    This repository is based on the material of <https://pmitev.github.io/to-awk-or-not/>
-    and puts it into teaching cycles.
     
 ## Schedule
 
@@ -45,4 +38,3 @@ flowchart TD
 
  * [CLI text processing with GNU awk](https://learnbyexample.github.io/learn_gnuawk/)
  * [To awk or not](https://pmitev.github.io/to-awk-or-not)
-

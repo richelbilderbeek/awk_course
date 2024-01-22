@@ -19,7 +19,7 @@
 
 ## Overview
 
-In this session, we use AWK on a file with comma-seperated values.
+In this session, we use AWK on a file with comma-separated values.
 
 ## Exercises
 
