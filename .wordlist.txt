@@ -48,4 +48,8 @@ VVS
 wc
 wd
 whitespace
+qat
+wat
+addr
+
 

@@ -47,7 +47,7 @@ Then do:
 - Create a file called `hello_world.awk`, with the 'Hello, world!' example code
 - Run the AWK script using `awk -f hello_world.awk`
 
-### Exercise 2: run AWK from the command-line using single qutes
+### Exercise 2: run AWK from the command-line using single quotes
 
 !!!- info "Learning objectives"
 

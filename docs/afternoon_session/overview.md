@@ -19,6 +19,13 @@ Time          | Topic
 15:00-16:00   | Break
 15:15-16:00   | [Related tools](related_tools.md)
 
+Extra material:
+
+- [Built-in functions](https://learnbyexample.github.io/learn_gnuawk/built-in-functions.html)
+- [Record seperators](https://learnbyexample.github.io/learn_gnuawk/record-separators.html)
+- [In-place file editing](https://learnbyexample.github.io/learn_gnuawk/in-place-file-editing.html)
+- [Mutiple-file input](https://learnbyexample.github.io/learn_gnuawk/multiple-file-input.html)
+
 ## Overview
 
 ### Facets of AWK
@@ -120,4 +127,4 @@ flowchart TD
 
  * [CLI text processing with GNU awk](https://learnbyexample.github.io/learn_gnuawk/): a book we use
  * [To awk or not](https://pmitev.github.io/to-awk-or-not): course material we use
-
+ * [AWK cheat sheet](https://catonmat.net/ftp/awk.cheat.sheet.txt)
