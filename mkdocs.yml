@@ -18,6 +18,7 @@ nav:
     - Related tools: afternoon_session/related_tools.md
   - Miscelleneous:
     - FAQ: misc/faq.md
+    - Exercise procedure: misc/exercise_procedure.md
 
 theme:
   name: material
