@@ -22,9 +22,9 @@ Time          | Topic
 Extra material:
 
 - [Built-in functions](https://learnbyexample.github.io/learn_gnuawk/built-in-functions.html)
-- [Record seperators](https://learnbyexample.github.io/learn_gnuawk/record-separators.html)
+- [Record separators](https://learnbyexample.github.io/learn_gnuawk/record-separators.html)
 - [In-place file editing](https://learnbyexample.github.io/learn_gnuawk/in-place-file-editing.html)
-- [Mutiple-file input](https://learnbyexample.github.io/learn_gnuawk/multiple-file-input.html)
+- [Multiple-file input](https://learnbyexample.github.io/learn_gnuawk/multiple-file-input.html)
 
 ## Overview
 
