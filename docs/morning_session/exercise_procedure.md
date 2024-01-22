@@ -70,8 +70,14 @@
 
     The goal of visiting the breakout room,
     is to ensure there is a learning environment.
-    It should be avoided to lecture or correct the learners,
-    as *they* need to think, read and practice.
+    Try to disturb as little as possible.
+    Avoid to lecture and avoid to correct the learners,
+    as this will make their learning less efficient.
+
+    If learners are asking a question,
+    coach the learners in finding the answer.
+    Avoid giving a direct answer,
+    as this will make their learning less efficient.
 
     ```
     flowchart TD
