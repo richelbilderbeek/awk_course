@@ -2,6 +2,11 @@
 
 ???- info "For teachers: why this setup?"
 
+    > Ideally, both learners have a camera and microphone on
+
+    This allows for a learning environment that is engaging
+    and where discussion can take place easily.
+
     > You will be put into Zoom Breakout rooms, in random pairs.
 
     This assures everyone learns effectively: pairs are optimal.
@@ -109,6 +114,7 @@
       fix --> |Done| next
     ```
 
+- Ideally, both learners have a camera and microphone on
 - You will be put into Zoom Breakout rooms, in random pairs.
 - There is no silent room.
 - Ideally, all do the exercises on their own computer, yet derive at a shared answer
