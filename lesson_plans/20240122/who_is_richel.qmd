@@ -13,7 +13,7 @@ number-sections: true
 
 # Who is Richèl?
 
-<https://github.com/UPPMAX/awk_course/tree/main/lesson_plans/20240118> ![](CC-BY-NC-SA.png)
+<https://github.com/richelbilderbeek/awk_course/blob/master/lesson_plans/20240122/who_is_richel.qmd> ![](CC-BY-NC-SA.png)
 
 ## How to pronounce my name
 

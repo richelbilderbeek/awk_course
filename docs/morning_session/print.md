@@ -109,7 +109,7 @@ In English, this is: 'For every line, print the first column and second column'.
 
 Confirm that this is true.
 
-#### Multiple columns seperated by a space
+#### Multiple columns separated by a space
 
 In a terminal, in the same folder as where the data is downloaded, do:
 
