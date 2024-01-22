@@ -214,3 +214,12 @@ flowchart TD
     - Wait
     - Ask questions
     - Read the next session. Turn of your camera to indicate you need to concentrate
+
+- I am alone in my Zoom breakout room. What do I do?
+
+???- info "Answer"
+
+    It is likely a teacher will quickly see this and ruthlessly
+    move you to another breakout room, so waiting is an option.
+
+    Else, go to the main room.
