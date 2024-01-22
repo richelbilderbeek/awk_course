@@ -29,7 +29,6 @@ flowchart TD
   awk:::focus_node
   cut
   grep
-  join
   sed
   tr
   wc
@@ -37,7 +36,6 @@ flowchart TD
   regexps[Regular expressions]
   split_data_in_columns[Split data into columns]
   count[Count]
-  merge_tables[Merge tables]
   replace[Replace]
 
   %% Tools
@@ -54,19 +52,16 @@ flowchart TD
   awk --> |can do| replace
   tr --> |can do| replace
   sed --> |can do| replace
-
-  join --> |can do| merge_tables
 ```
 
-Tool    |Regular expressions|Split data into columns|Replace|Count|Merge tables
---------|-------------------|-----------------------|-------|-----|------------
-`awk`   |Yes                |Yes                    |Yes    |Yes  |No
-`cut`   |No                 |Yes                    |No     |No   |No
-`grep`  |Yes                |No                     |No     |Yes  |No
-`join`  |No                 |Yes                    |No     |No   |Yes
-`sed`   |Yes                |Yes                    |Yes    |Yes  |No
-`tr`    |No                 |No                     |Yes    |No   |No
-`wc`    |No                 |No                     |No     |Yes  |No
+Tool    |Regular expressions|Split data into columns|Replace|Count
+--------|-------------------|-----------------------|-------|-----
+`awk`   |Yes                |Yes                    |Yes    |Yes
+`cut`   |No                 |Yes                    |No     |No
+`grep`  |Yes                |No                     |No     |Yes
+`sed`   |Yes                |Yes                    |Yes    |Yes
+`tr`    |No                 |No                     |Yes    |No
+`wc`    |No                 |No                     |No     |Yes
 
 > An overview what tools can do by themselves.
 
@@ -78,63 +73,129 @@ part of pipelines.
 
 See the exercise procedure [here](exercise_procedure.md).
 
-### Exercise 1: other tools
+### Exercise 1: `cut`
 
 !!!- info "Learning objectives"
 
-    - Hear about the tools related to `awk`
+    - Use `cut`
 
-Read the following text, skip terms you do not yet know:
+Read:
 
-- [The Wikipedia page about AWK](https://en.wikipedia.org/wiki/AWK), abstract only
-- [The Wikipedia page about sed](https://en.wikipedia.org/wiki/Sed), abstract only
-- [The Wikipedia page about grep](https://en.wikipedia.org/wiki/Grep), abstract only
+- [The top part of the Wikipedia about page on 'cut'](https://en.wikipedia.org/wiki/Cut_(Unix))
 
-Here is an overview of tools similar to `awk`, what they are and where they shine:
-
-Tool                                      |Description (as copied from their Wikipedia page)                                                                 |Shines when
-------------------------------------------|------------------------------------------------------------------------------------------------------------------|----------------------------------
-[AWK](https://en.wikipedia.org/wiki/AWK)  |a domain-specific language designed for text processing and typically used as a data extraction and reporting tool|working with tabular data
-[sed](https://en.wikipedia.org/wiki/Sed)  |a Unix utility that parses and transforms text, using a simple, compact programming language                      |replace a regular expression
-[grep](https://en.wikipedia.org/wiki/Grep)|a command-line utility for searching plain-text data sets for lines that match a regular expression               |searching for regular expressions
-
-Does the wisdom make sense now?
-
-## Similarities by example
-
-Here we show the similarities of `awk`, `grep` and `sed`.
-
-In this example, we use a file called [coins.txt](https://pmitev.github.io/to-awk-or-not/data/coins.txt):
-
-```title="coins.txt"
-gold     1    1986  USA                 American Eagle
-gold     1    1908  Austria-Hungary     Franz Josef 100 Korona
-silver  10    1981  USA                 ingot
-gold     1    1984  Switzerland         ingot
-gold     1    1979  RSA                 Krugerrand
-gold     0.5  1981  RSA                 Krugerrand
-gold     0.1  1986  PRC                 Panda - silver lined
-silver   1    1986  USA                 Liberty dollar
-gold     0.25 1986  USA                 Liberty 5-dollar piece
-silver   0.5  1986  USA                 Liberty 50-cent piece
-silver   1    1987  USA                 Constitution dollar
-gold     0.25 1987  USA                 Constitution 5-dollar piece
-gold     1    1988  Canada              Maple Leaf
-```
-
-The goal is to extract all lines that contain the word `silver`.
-
-These statements, use the different tools, do exactly the same:
+In a terminal, do:
 
 ```
-awk "/silver/" coins.txt
-grep "silver" coins.txt
-sed -n "/silver/p" coins.txt
+wget https://raw.githubusercontent.com/richelbilderbeek/awk_course/master/data/diamonds_raw.csv
 ```
 
-`awk` starts to shine when the thing you want to do is more
-complex then detecting lines with a text.
+to download a file called `diamonds_raw.csv`.
 
-## Links
+Then, in a terminal, do:
 
- * [Book 'CLI text processing with GNU awk'](https://learnbyexample.github.io/learn_gnuawk/)
+- `man cut`
+- `cut -d "," -f 2 diamonds_raw.csv`
+- `cat diamonds_raw.csv | cut -d "," -f 2 `
+
+Express in your own words: what does `cut` do?
+
+### Exercise 2: `grep`
+
+!!!- info "Learning objectives"
+
+    - Use `grep`
+
+Read:
+
+- [The top part of the Wikipedia about page on 'grep'](https://en.wikipedia.org/wiki/Grep)
+
+In a terminal, do:
+
+```
+wget https://github.com/devstronomy/nasa-data-scraper/raw/master/data/csv/satellites.csv
+```
+
+to download a file called `satellites.csv`.
+
+Then, in a terminal, do:
+
+- `man cut`
+- `grep om satellites.csv`
+- `cat satellites.csv | grep [^aeiou]om`
+
+Express in your own words: what does `grep` do?
+
+### Exercise 3: `sed`
+
+!!!- info "Learning objectives"
+
+    - Use `sed`
+
+Read:
+
+- [The top part of the Wikipedia about page on 'sed'](https://en.wikipedia.org/wiki/Sed)
+
+In a terminal, do:
+
+```
+wget https://www.gutenberg.org/cache/epub/1787/pg1787.txt
+```
+
+to download a file called `pg1787.txt`.
+
+Then, in a terminal, do:
+
+- `man sed`
+- `sed 's/Hamlet/Frederik X/g' pg1787.txt`
+- `sed 's/Hamlet/Frederik X/g' pg1787.txt | awk '/Frederik X/'`
+- `sed 's/Hamlet/Frederik X/' pg1787.txt | awk '/Frederik X/'`
+
+Express in your own words: what does `sed` do?
+
+### Exercise 4: `tr`
+
+!!!- info "Learning objectives"
+
+    - Use `tr`
+
+Read:
+
+- [The top part of the Wikipedia about page on 'tr'](https://en.wikipedia.org/wiki/Tr_(Unix))
+
+Then, in a terminal, do:
+
+- `man tr`
+- `echo "Hello" | tr -s e a`
+- `echo "Hello" | tr -d e`
+- `echo "Hello world" | tr -d aeiou`
+
+Express in your own words: what does `tr` do?
+
+### Exercise 5: `wc`
+
+!!!- info "Learning objectives"
+
+    - Use `wc`
+
+Read:
+
+- [The top part of the Wikipedia about page on 'wc'](https://en.wikipedia.org/wiki/Wc_(Unix))
+
+In a terminal, do:
+
+```
+wget https://www.gutenberg.org/cache/epub/1787/pg1787.txt
+```
+
+to download a file called `pg1787.txt`.
+
+Then, in a terminal, do:
+
+- `man sed`
+- `wc pg1787.txt`
+- `wc pg1787.txt --lines`
+- `wc pg1787.txt --words`
+- `awk '/Hamlet/' pg1787.txt | wc --lines`
+
+
+Express in your own words: what does `wc` do?

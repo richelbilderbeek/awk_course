@@ -68,6 +68,29 @@ There is no resource on AWK that is
 
 So, I ended up to make up all course material.
 
+## Helper instructions
+
+The goal of going through the rooms is to see
+that learning can take place and is taking place.
+
+- Q: What is the purpose of visiting the breakout rooms?
+- A: To check if the learners can work and do so in a welcoming way
+- Q: If, in a breakout room, the learners appear to be concentrated, what do you do?
+- A: Do not disturb and move to the next breakout room: you've seen they can work
+- Q: If, in a breakout room, two learners are discussing something. They, however, have reached a wrong conclusion. What do you do?
+- A: Do not disturb and move to the next breakout room: you've seen they can work
+- Q: If, in a breakout room, two learners have an unfriendly argument, what do you do?
+- A: Do something about this. This is up to you. Either handle this yourself or ask me to take care of it. Always let me know
+- Q: If, in a breakout room, two learners are discussing Pokemon, what do you do?
+- A: Do something about this to set them back to work in a friendly way
+- Q: If, in a breakout room, only one learner has no camera, what do you do?
+- A: Do not disturb and move to the next breakout room: you have no evidence they cannot work
+- Q: If, in a breakout room, both learners have no camera, what do you do?
+- A: Do not disturb and move to the next breakout room: you have no evidence they cannot work
+- Q: If, in a breakout room, one or both learners ask a question to you. What do you do?
+- A: Determine if you should answer: have they discussed together already? If yes, help them arrive at finding the right answer. Only give a direct answer as a last option
+
+
 ## Schedule
 
 - Present 'Who is Richel'
