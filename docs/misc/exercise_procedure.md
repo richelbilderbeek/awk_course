@@ -169,3 +169,48 @@ flowchart TD
 ```
 
 > Overview of the exercise procedure
+
+## Questions
+
+- You are in a breakout room with someone else. 
+  You both do not know what to do.
+  What went wrong?
+
+???- info "Answer"
+
+    Before you are sent to the breakout rooms,
+    it is asked if you know what to do,
+    with the goal of preventing this situation.
+
+    Try to help the teacher give clear enough instructions
+    next time.
+
+
+- You are in a breakout room with someone else. 
+  You need to install a piece of software, 
+  which takes a couple of minutes of time.
+  Will you still have enough time for the exercises?
+
+???- info "Answer"
+
+    Likely: yes, you will have enough time for the exercises. 
+
+    It is likely you are not the only one that
+    has this problem. 
+    The course follows the pace of the learners,
+    hence, we move on to the next session when most learners
+    have finished the exercises
+
+- You finished the exercise and are in the main room,
+  waiting for the course to move on.
+  You were asked to help in another breakout room,
+  yet you did not feel comfortable to do so.
+  What do you do?
+
+???- info "Answer"
+
+    These are your options:
+
+    - Wait
+    - Ask questions
+    - Read the next session. Turn of your camera to indicate you need to concentrate
