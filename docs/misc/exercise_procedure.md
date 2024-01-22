@@ -119,6 +119,9 @@
 - There is no silent room.
 - Ideally, all do the exercises on their own computer, yet derive at a shared answer
 - One should commonly share screens
+- Stuck? You can (1) wait for a teacher to come by, 
+  (2) click on the Zoom option 'Ask for help', or 
+  (3) go to the main room
 - When done with the exercises, go back to the main room
 - Learners that are done will be asked to try to help the remaining working learners,
   by joining their breakout rooms
@@ -132,15 +135,17 @@
 
 ```mermaid
 flowchart TD
+  subgraph breakout_room[Your initial breakout room]
+    do_exercise[Do exercises in group]
+    stuck[Wait\nAsk for help\nGo the main room]
+    do_exercise <--> |Stuck?| stuck
+  end
   subgraph main_room[Main room]
     get_exercise[Get exercises]
     done_exercise[Done exercises]
     most_done_exercise[Most have done exercises]
     closing_breakout_rooms[Closing breakout rooms]
     feedback[Feedback]
-  end
-  subgraph breakout_room[Your initial breakout room]
-    do_exercise[Do exercises in group]
   end
   subgraph other_breakout_room[Another breakout room]
     help_do_exercise[Help do exercises in group]
@@ -155,6 +160,12 @@ flowchart TD
   help_do_exercise --> |breakout rooms close| feedback
   most_done_exercise --> |many learners in main room| closing_breakout_rooms
   closing_breakout_rooms --> feedback
+
+  breakout_room ~~~ main_room ~~~ other_breakout_room
+
+  get_exercise ~~~ help_do_exercise
+  do_exercise ~~~ help_do_exercise
+  help_do_exercise ~~~ most_done_exercise
 ```
 
 > Overview of the exercise procedure
