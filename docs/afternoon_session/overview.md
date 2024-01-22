@@ -91,7 +91,6 @@ flowchart TD
   awk:::focus_node
   cut
   grep
-  join
   sed
   tr
   wc
@@ -99,7 +98,6 @@ flowchart TD
   regexps[Regular expressions]
   split_data_in_columns[Split data into columns]
   count[Count]
-  merge_tables[Merge tables]
   replace[Replace]
 
   %% Tools
@@ -116,8 +114,6 @@ flowchart TD
   awk --> |can do| replace
   tr --> |can do| replace
   sed --> |can do| replace
-
-  join --> |can do| merge_tables
 ```
 
 ## Links
