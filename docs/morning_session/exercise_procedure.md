@@ -79,7 +79,7 @@
     Avoid giving a direct answer,
     as this will make their learning less efficient.
 
-    ```
+    ```mermaid
     flowchart TD
       question_asked[Learners ask a question?]
       maybe_answer[Reply, maybe answer the question]
