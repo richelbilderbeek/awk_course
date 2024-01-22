@@ -74,11 +74,22 @@ I added helper instructions in the exercise procedure.
 
 ## Schedule
 
+Begin:
+
+- Ask to turn on cameras
 - Present 'Who is Richel'
+- Repeat to turn on cameras
 - Poll: Who knows what grep is?
 - Poll: Who knows what sed is?
+- Poll: Who knows what C is?
 - Give overview of course
 - Ask to associate on 'AWK is'
+
+Main:
+
 - Start cycles
 
+End:
 
+- Summarize
+- Preview Day 2
