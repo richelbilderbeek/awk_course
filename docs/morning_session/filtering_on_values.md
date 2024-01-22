@@ -196,8 +196,8 @@ which describes the data.
 
 Using `awk` only:
 
-- show the number of lines (in a smart way)
-- show the number of columns (in a smart way)
+- show the number of lines, in any clumsy way
+- show the number of columns, in any clumsy way
 - show only the first line
 - show only the first ten lines
 - show the prices of all diamonds, while skipping the header
