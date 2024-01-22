@@ -39,6 +39,8 @@ Knowing regular expressions allows us to search for patterns in a text.
 
 ## Exercises
 
+See the exercise procedure [here](../misc/exercise_procedure.md).
+
 ### Exercise 1: practice regular expressions
 
 !!!- info "Learning objectives"

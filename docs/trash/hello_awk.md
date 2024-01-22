@@ -29,7 +29,7 @@ In this session, we run AWK.
 
 ## Exercises
 
-See the exercise procedure [here](exercise_procedure.md).
+See the exercise procedure [here](../misc/exercise_procedure.md).
 
 ### Exercise 1: run an AWK script
 
