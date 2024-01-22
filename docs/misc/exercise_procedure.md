@@ -126,7 +126,7 @@
 - Learners that are done will be asked to try to help the remaining working learners,
   by joining their breakout rooms
 - When two-thirds of the learners are in the main room, all break-out rooms
-  will be closed ruthlessly
+  will be closed ruthlessly. It still takes 1 minute before the room closes though :-)
 - Breaks are always on the scheduled time. You will be reminded in that chat
 - Take that break, either in the main room or in your breakout room. The breakout rooms will not be closed
 - In the main room, random learners will be asked questions
