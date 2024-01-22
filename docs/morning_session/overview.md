@@ -6,7 +6,7 @@ This module introduces the fundamentals of the AWK language.
 
 Time          | Topic
 --------------|-------------------------------
-09:00-10:00   | [print](print.md), [filtering on values](filtering_on_values.md)
+09:15-10:00   | [print](print.md), [filtering on values](filtering_on_values.md)
 10:00-10:15   | Break
 10:15-11:00   | [BEGIN and END](begin_and_end.md), [variables](variables.md)
 11:00-11:15   | Break

@@ -13,7 +13,7 @@ This module introduces the fundamentals of the AWK language.
 
 Time          | Topic
 --------------|-------------------------------
-13:00-14:00   | [Regular expressions](regexps.md)
+13:15-14:00   | [Regular expressions](regexps.md)
 14:00-14:15   | Break
 14:15-15:00   | [What is AWK](what_is_awk.md), [Basic Linux](basic_linux.md)
 15:00-16:00   | Break
