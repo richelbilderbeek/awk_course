@@ -144,6 +144,7 @@ ready to solve the problem, as they had not learned:
 - For loops using a counter
 - 2D associative arrays
 - the `split` functions
+- `next`
 
 An open question is (1) (again) did the teaching cover too little
 topics, (2) should the exercise be simplified?
