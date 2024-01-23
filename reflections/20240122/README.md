@@ -108,9 +108,57 @@ I asked multiple learners about how the exercise workflow feels and works
 out and there was only positive reactions. Sure, I realize that there is
 a bias for being positive here :-)
 
+At 15:55, I called back the learners. I repeated what we did and
+showed what we did not discuss. I told them that the day after
+Jonas will teach them. I thanked them and we all left the Zoom room.
 
+## Discussion Pavlin
+
+Me and Pavlin were discussing the pros and cons of having learners
+teaching. One problem with having learners teach is that
+they can teach misinformation.
+
+I have been searching the literature:
 
  * Question: is peer teaching a good thing?
+   [Bene & Bergus, 2014] show a study where they compare
+   learning with learning and teaching, 
+   which has an Effect Size of 2.1 [Gregory et al, 2011]. This is a
+   a massive effect size (e.g. homework has 0.29).
+ * Checking [Wikipedai's Computer-supported collaborative learning's teacher roles](https://en.wikipedia.org/wiki/Computer-supported_collaborative_learning#Teacher_roles)
+   find that CSCL has an effect size of 0.51, which would be 47 on the 150 item
+   list by John Hattie
 
+I asked ChatGPT about the relevant of peer teaching and learners teaching
+misinformation. ChatGPT cited some literature and claimed that it is
+a feature that needs to be in mind, but I could not pry a number out of it.
+One of the most important ways to counter it, however, is providing
+feedback. As I do provide feedback, I feel unworried to let learners teach.
 
+## Reflections during Day 2
 
+During Day 2, I feel that the learners did not seem to be 
+ready to solve the problem, as they had not learned:
+- Multiple files
+- `FRN`
+- For loops using a counter
+- 2D associative arrays
+- the `split` functions
+
+An open question is (1) (again) did the teaching cover too little
+topics, (2) should the exercise be simplified?
+
+My feeling is that the exercise should be simplified, because
+- the exercise does not make AWK shine, instead this is where Tidyverse/pandas shine instead
+- the exercise has too many biological terms, instead a more general
+  research should be done
+- the data files in the exercise are big: it is unimportant to have 4GBs
+  of data, instead settle for files that are 1 MB max
+
+Or, alternatively, the second day should start
+with teaching the things that the learners will need.
+
+## References
+
+- [Bene & Bergus, 2014] Bene, Kristen L., and George Bergus. "When learners become teachers." Fam Med 46.10 (2014): 783-7.
+- [Gregory et al, 2011]Gregory, Alexander, et al. "Both preparing to teach and teaching positively impact learning outcomes for peer teachers." Medical teacher 33.8 (2011): e417-e422.
