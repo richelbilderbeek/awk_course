@@ -12,6 +12,10 @@ Time          | Topic
 11:00-11:15   | Break
 11:15-12:00   | [working with comma-separated values](working_with_csvs.md), [Associative arrays](associative_arrays.md)
 
+> The times in this schedules are only guidelines.
+> The pace of the learners determines the speed of
+> going through the course material.
+
 ## Overview
 
 ```mermaid
