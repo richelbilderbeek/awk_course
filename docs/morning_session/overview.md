@@ -38,6 +38,16 @@ flowchart TD
   filtering_on_regex --> |needs| filtering_on_values
 ```
 
+
+Description              |Syntax
+-------------------------|---------------------
+Do an action             |`{ [action] }`
+Filtering                |`[condition] { [action] }`
+Multiple filters         |`[condition_1] { [action_1] } [condition_2] { [action_2] }`
+Actions at begin and end |`BEGIN { [action]} [condition] { [action] } END { [action]}`
+
+> Overview of the Awk syntax built-up
+
 ## Links
 
  * [CLI text processing with GNU awk](https://learnbyexample.github.io/learn_gnuawk/)
